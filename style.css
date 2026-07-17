@@ -674,6 +674,10 @@ FAQ Section
      text-align: center;
      margin-bottom: 10px;
    }
+  .tel{
+   padding: 0.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   }
 
    .hero-trust-item strong {
      font-size: 20px;
