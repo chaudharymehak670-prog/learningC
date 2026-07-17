@@ -673,7 +673,7 @@ FAQ Section
      margin-bottom: 10px;
    }
   .tel{
-   padding: 0.5rem;
+   /* padding: 0.5rem; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
    }
 
