@@ -602,7 +602,7 @@ FAQ Section
  /* Mobile */
  @media (max-width:767px) {
   .container{
-    width: 72% !important;
+    width: 80% !important;
   }
 
    /* Navbar */
