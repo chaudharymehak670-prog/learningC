@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to C++</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="topics.css">
+</head>
+
+<body>
+
+    <div class="section1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h1>CONDITIONAL STATEMENTS IN C++</h1>
+                </div>
+
+                <div class="col-lg-8">
+
+                    <h4>
+
+                        Conditional Statements C++ me decision lene ke liye use kiye jaate hain. Ye kisi condition ko
+                        check
+                        karte hain aur uske according different blocks of code execute karte hain. Agar condition true
+                        ho to
+                        ek block execute hota hai aur agar false ho to doosra block execute hota hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Conditional Statements are used to make decisions in a program. They execute different blocks
+                            of
+                            code depending on whether a condition is true or false.</b>
+
+                    </h4>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <a href="./index.html#topics">
+
+                        <img src="if6.png" class="img-responsive">
+
+                    </a>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>What are Conditional Statements?</h3>
+
+                    <h4>
+
+                        Conditional Statements program ko decision lene ki power dete hain. Ye condition ko evaluate
+                        karke
+                        decide karte hain ki kaunsa code execute hoga.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Conditional Statements allow a program to make decisions by checking conditions and executing
+                            the appropriate block of code.</b>
+
+                    </h4>
+
+                    <div class="box">
+
+                        <strong>💡 Real Life Example</strong>
+
+                        <p>
+
+                            Agar traffic signal <b>Green</b> hai to gaadi chalao.
+
+                        </p>
+
+                        <p>
+
+                            Agar signal <b>Red</b> hai to ruk jao.
+
+                        </p>
+
+                        <p>
+
+                            Isi tarah C++ bhi condition check karke decision leta hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Why Do We Use Conditional Statements?</h3>
+
+                    <h4>
+
+                        Conditional Statements ka use alag-alag situations ke hisaab se different actions perform karne
+                        ke
+                        liye kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Conditional Statements help programs make decisions and execute different actions based on
+                            conditions.</b>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Make decisions in programs.</li>
+
+                        <li>Execute different blocks of code.</li>
+
+                        <li>Validate user input.</li>
+
+                        <li>Control program flow.</li>
+
+                        <li>Handle multiple situations efficiently.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Types of Conditional Statements</h3>
+
+                    <h4>
+
+                        C++ me mainly paanch types ke Conditional Statements hote hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>C++ provides five main types of Conditional Statements.</b>
+
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Statement</th>
+
+                            <th>Purpose</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>if</td>
+
+                            <td>Executes code only when the condition is true.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>if...else</td>
+
+                            <td>Chooses one block from two options.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>else if</td>
+
+                            <td>Checks multiple conditions.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Nested if</td>
+
+                            <td>Uses one if statement inside another.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>switch</td>
+
+                            <td>Selects one option from multiple choices.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>if Statement</h3>
+
+                    <h4>
+
+                        <b>if</b> statement tab use hota hai jab hume sirf condition true hone par code execute karna
+                        ho.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>if</code> statement executes a block of code only when the specified condition is
+                            true.</b>
+
+                    </h4>
+
+                    <pre>
+if(condition)
+{
+    // code
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Voting eligibility, login validation, marks checking aur age verification jaise tasks me
+                            <b>if</b> statement ka use hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>if Statement Example</h3>
+
+                    <h4>
+
+                        Neeche diya gaya program check karta hai ki person vote dene ke liye eligible hai ya nahi.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The following program checks whether a person is eligible to vote.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#ifExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="ifExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int age = 20;
+
+    if(age >= 18)
+    {
+        cout << "Eligible for Voting";
+    }
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Eligible for Voting
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            Age is 20.
+
+                            <br>
+
+                            Condition (age >= 18) is true.
+
+                            <br>
+
+                            Therefore, "Eligible for Voting" is displayed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>if...else Statement</h3>
+
+                    <h4>
+
+                        Jab hume condition ke true aur false dono cases ko handle karna ho tab <b>if...else</b>
+                        statement use hoti hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>if...else</code> statement executes one block if the condition is true and another
+                            block if it is false.</b>
+
+                    </h4>
+
+                    <pre>
+if(condition)
+{
+    // code
+}
+else
+{
+    // code
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Pass/Fail check karna, Even/Odd check karna aur Login Success/Failure jaise cases me
+                            <b>if...else</b> use hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>if...else Example</h3>
+
+                    <h4>
+
+                        Ye program check karta hai ki number even hai ya odd.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program checks whether a number is even or odd.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#ifElseExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="ifElseExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int num = 8;
+
+    if(num % 2 == 0)
+    {
+        cout << "Even Number";
+    }
+    else
+    {
+        cout << "Odd Number";
+    }
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Even Number
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The remainder of 8 ÷ 2 is 0.
+
+                            <br>
+
+                            Therefore, the number is Even.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>else if Statement</h3>
+
+                    <h4>
+
+                        Jab hume ek se zyada conditions check karni hoti hain tab <b>else if</b> statement use ki jati
+                        hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>else if</code> statement is used to check multiple conditions one after
+                            another.</b>
+
+                    </h4>
+
+                    <pre>
+if(condition1)
+{
+    // code
+}
+else if(condition2)
+{
+    // code
+}
+else
+{
+    // code
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Grades, salary range, discounts aur multiple menu options ke liye <b>else if</b> statement
+                            best choice hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>else if Example</h3>
+
+                    <h4>
+
+                        Ye program student ka grade display karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program displays the student's grade based on marks.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#elseifExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="elseifExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int marks = 82;
+
+    if(marks >= 90)
+    {
+        cout << "Grade A";
+    }
+    else if(marks >= 75)
+    {
+        cout << "Grade B";
+    }
+    else if(marks >= 50)
+    {
+        cout << "Grade C";
+    }
+    else
+    {
+        cout << "Fail";
+    }
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Grade B
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            Marks are 82.
+
+                            <br>
+
+                            82 is greater than or equal to 75 but less than 90.
+
+                            <br>
+
+                            Therefore, Grade B is displayed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Nested if Statement</h3>
+
+                    <h4>
+
+                        Jab ek <b>if</b> statement ke andar doosra <b>if</b> statement use kiya jata hai, use <b>Nested
+                            if</b> kehte
+                        hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A Nested if statement is an if statement placed inside another if statement. It is used when
+                            multiple
+                            conditions need to be checked one after another.</b>
+
+                    </h4>
+
+                    <pre>
+if(condition1)
+{
+    if(condition2)
+    {
+        // code
+    }
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Nested if ka use tab hota hai jab ek condition true hone ke baad hi doosri condition check
+                            karni ho.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Nested if Example</h3>
+
+                    <h4>
+
+                        Ye program check karta hai ki student pass bhi hai aur first division me bhi hai ya nahi.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program checks whether a student has passed and secured the first division.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#nestedIfExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="nestedIfExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int marks = 82;
+
+    if(marks >= 33)
+    {
+        if(marks >= 60)
+        {
+            cout << "First Division";
+        }
+    }
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            First Division
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            Marks are 82.
+
+                            <br>
+
+                            First condition (marks >= 33) is true.
+
+                            <br>
+
+                            Second condition (marks >= 60) is also true.
+
+                            <br>
+
+                            Therefore, "First Division" is displayed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>switch Statement</h3>
+
+                    <h4>
+
+                        <b>switch</b> statement ka use tab kiya jata hai jab ek variable ki value ke according multiple
+                        options me se ek option choose karna ho.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>switch</code> statement is used to select one block of code from multiple options
+                            based on the value of a variable.</b>
+
+                    </h4>
+
+                    <pre>
+switch(expression)
+{
+    case value1:
+        // code
+        break;
+
+    case value2:
+        // code
+        break;
+
+    default:
+        // code
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Calculator, menu-driven programs aur day selection jaise applications me <b>switch</b>
+                            statement ka use hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>switch Statement Example</h3>
+
+                    <h4>
+
+                        Ye program week ke day ko display karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program displays the name of the day using the switch statement.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#switchExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="switchExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int day = 2;
+
+    switch(day)
+    {
+        case 1:
+            cout << "Monday";
+            break;
+
+        case 2:
+            cout << "Tuesday";
+            break;
+
+        case 3:
+            cout << "Wednesday";
+            break;
+
+        default:
+            cout << "Invalid Day";
+    }
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Tuesday
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The value of day is 2.
+
+                            <br>
+
+                            Case 2 matches the value.
+
+                            <br>
+
+                            Therefore, "Tuesday" is displayed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>default Statement</h3>
+
+                    <h4>
+
+                        <b>default</b> block tab execute hota hai jab koi bhi case match nahi karta.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>default</code> statement executes when no case matches the given expression.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>break Statement</h3>
+
+                    <h4>
+
+                        <b>break</b> statement switch ke current case ko terminate karta hai aur control ko switch block
+                        ke bahar le jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>break</code> statement terminates the current case and exits the switch
+                            statement.</b>
+
+                    </h4>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Common Mistakes</h3>
+
+                    <h4>
+
+                        Beginners Conditional Statements use karte waqt kuch common mistakes kar dete hain. In mistakes
+                        ki wajah se program galat output de sakta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Beginners often make common mistakes while using conditional statements, which may produce
+                            incorrect results.</b>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Using <b>=</b> instead of <b>==</b> in conditions.</li>
+
+                        <li>Missing curly braces <b>{ }</b> for multiple statements.</li>
+
+                        <li>Forgetting the <b>break</b> statement in switch cases.</li>
+
+                        <li>Writing incorrect logical conditions.</li>
+
+                        <li>Using unnecessary nested if statements.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Important Note</h3>
+
+                    <h4>
+
+                        Hamesha comparison ke liye <b>==</b> aur value assign karne ke liye <b>=</b> operator ka use
+                        karein. Ye beginners ki sabse common mistake hoti hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Always use <code>==</code> for comparison and <code>=</code> for assignment. This is one of
+                            the most common mistakes made by beginners.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Did You Know?</h3>
+
+                    <h4>
+
+                        Conditional Statements ka use har software me hota hai, jaise ATM, Login Systems, Games, Online
+                        Shopping aur Mobile Apps.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Conditional statements are used in almost every software application, including banking
+                            systems, games, websites, and mobile apps.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Summary Table</h3>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Statement</th>
+
+                            <th>Purpose</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>if</td>
+
+                            <td>Executes code when the condition is true.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>if...else</td>
+
+                            <td>Chooses one block from two options.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>else if</td>
+
+                            <td>Checks multiple conditions.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Nested if</td>
+
+                            <td>Checks multiple dependent conditions.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>switch</td>
+
+                            <td>Selects one option from multiple choices.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Key Points</h3>
+
+                    <ul>
+
+                        <li>Conditional statements help a program make decisions.</li>
+
+                        <li><b>if</b> executes code only when the condition is true.</li>
+
+                        <li><b>if...else</b> handles two possible outcomes.</li>
+
+                        <li><b>else if</b> is useful for checking multiple conditions.</li>
+
+                        <li><b>Nested if</b> is used when one condition depends on another.</li>
+
+                        <li><b>switch</b> is a better choice for multiple fixed options.</li>
+
+                        <li>Always use <b>break</b> inside switch cases.</li>
+
+                        <li>Use <b>==</b> for comparison and <b>=</b> for assignment.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Practice Questions</h3>
+
+                    <ol>
+
+                        <li>What are Conditional Statements?</li>
+
+                        <li>Why do we use Conditional Statements?</li>
+
+                        <li>Explain the <b>if</b> statement with an example.</li>
+
+                        <li>Differentiate between <b>if</b> and <b>if...else</b>.</li>
+
+                        <li>What is the purpose of the <b>else if</b> statement?</li>
+
+                        <li>What is a Nested if statement?</li>
+
+                        <li>What is the use of the <b>switch</b> statement?</li>
+
+                        <li>What is the purpose of the <b>default</b> case in a switch statement?</li>
+
+                        <li>Why is the <b>break</b> statement used in switch?</li>
+
+                        <li>Write a C++ program to check whether a number is positive, negative, or zero.</li>
+
+                        <li>Write a C++ program to find the largest of two numbers using <b>if...else</b>.</li>
+
+                        <li>Write a C++ program to display the day of the week using the <b>switch</b> statement.</li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="index.html#topics" class="home-btn">
+        <span class="glyphicon glyphicon-home"></span>
+    </a>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

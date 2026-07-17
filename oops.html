@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to C++</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="topics.css">
+</head>
+
+<body>
+
+    <div class="section1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h1>OBJECT ORIENTED PROGRAMMING (OOP)</h1>
+                </div>
+
+                <div class="col-lg-8">
+
+                    <h4>
+
+                        Object-Oriented Programming (OOP) ek programming approach hai jisme programs ko Objects aur
+                        Classes
+                        ki help se design kiya jata hai. OOP code ko reusable, secure aur easy to maintain banata hai.
+                        Modern software development me OOP ka bahut important role hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Object-Oriented Programming (OOP) is a programming approach that uses classes and objects to
+                            design programs. It helps make code reusable, secure, organized, and easier to maintain.</b>
+
+                    </h4>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <a href="./index.html#topics">
+
+                        <img src="oops10.png" class="img-responsive">
+
+                    </a>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>What is OOP?</h3>
+
+                    <h4>
+
+                        OOP ek programming concept hai jisme real-world objects ko Classes aur Objects ke through
+                        represent
+                        kiya jata hai. Har object ke paas apni properties aur functions hote hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>OOP is a programming concept that represents real-world entities using classes and objects.
+                            Every object has its own properties and behaviors.</b>
+
+                    </h4>
+
+                    <div class="box">
+
+                        <strong>💡 Real Life Example</strong>
+
+                        <p>
+
+                            Socho ek <b>Car</b> hai.
+
+                        </p>
+
+                        <p>
+
+                            Car ka <b>Color, Model, Speed</b> uski properties hain.
+
+                        </p>
+
+                        <p>
+
+                            Car ka <b>Start(), Stop(), Brake()</b> uske functions hain.
+
+                        </p>
+
+                        <p>
+
+                            Isi tarah OOP me har object ke paas data aur functions dono hote hain.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Why Do We Use OOP?</h3>
+
+                    <h4>
+
+                        OOP ka use bade programs ko organize karne aur code ko reusable banane ke liye kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>OOP helps organize large programs, improves code reusability, and makes software easier to
+                            develop and maintain.</b>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Reduce code duplication.</li>
+
+                        <li>Improve code reusability.</li>
+
+                        <li>Increase security.</li>
+
+                        <li>Make programs easier to maintain.</li>
+
+                        <li>Represent real-world objects easily.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Main Concepts of OOP</h3>
+
+                    <h4>
+
+                        OOP mainly chhe important concepts par based hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Object-Oriented Programming is mainly based on six important concepts.</b>
+
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Concept</th>
+
+                            <th>Description</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Class</td>
+
+                            <td>Blueprint for creating objects.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Object</td>
+
+                            <td>Instance of a class.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Encapsulation</td>
+
+                            <td>Combines data and functions.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Inheritance</td>
+
+                            <td>Allows code reusability.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Polymorphism</td>
+
+                            <td>Same function behaves differently.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Abstraction</td>
+
+                            <td>Hides unnecessary details.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Class</h3>
+
+                    <h4>
+
+                        Class ek blueprint ya template hota hai jiske basis par objects create kiye jaate hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A class is a blueprint or template used to create objects.</b>
+
+                    </h4>
+
+                    <pre>
+class Student
+{
+public:
+
+    string name;
+
+};
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Class ka use similar objects ko organize karne ke liye kiya jata hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Object</h3>
+
+                    <h4>
+
+                        Object class ka real instance hota hai. Object ke through hum class ke members ko access karte
+                        hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>An object is a real instance of a class used to access its data members and member
+                            functions.</b>
+
+                    </h4>
+
+                    <pre>
+Student s1;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Ek class se multiple objects create kiye ja sakte hain.
+
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Class and Object Example</h3>
+
+                    <h4>
+
+                        Neeche diya gaya program Class aur Object ka basic example dikhata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The following program demonstrates the basic use of a class and an object.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#classObjectExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="classObjectExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Student
+{
+public:
+
+    string name;
+
+    void display()
+    {
+        cout << "Name = " << name;
+    }
+
+};
+
+int main()
+{
+
+    Student s1;
+
+    s1.name = "Anjali";
+
+    s1.display();
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Name = Anjali
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            A class named <b>Student</b> is created.
+
+                            <br>
+
+                            An object <b>s1</b> is created from the class.
+
+                            <br>
+
+                            The value <b>"Anjali"</b> is stored in <b>name</b>.
+
+                            <br>
+
+                            The <b>display()</b> function prints the value.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Data Members</h3>
+
+                    <h4>
+
+                        Class ke andar jo variables declare kiye jaate hain unhe <b>Data Members</b> kehte hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Variables declared inside a class are called data members.</b>
+
+                    </h4>
+
+                    <pre>
+class Student
+{
+public:
+
+    string name;
+
+    int age;
+
+};
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Data Members object ki information store karte hain jaise Name, Age, Salary, Roll Number
+                            etc.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Member Functions</h3>
+
+                    <h4>
+
+                        Class ke andar jo functions likhe jaate hain unhe <b>Member Functions</b> kehte hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Functions declared inside a class are called member functions.</b>
+
+                    </h4>
+
+                    <pre>
+class Student
+{
+public:
+
+    void show()
+    {
+        cout << "Welcome";
+    }
+
+};
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Member Functions object ke data par operations perform karte hain.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Access Specifiers</h3>
+
+                    <h4>
+
+                        Access Specifiers decide karte hain ki class ke members ko kahan se access kiya ja sakta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Access specifiers define the accessibility of class members.</b>
+
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Specifier</th>
+
+                            <th>Description</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>public</td>
+
+                            <td>Accessible from anywhere.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>private</td>
+
+                            <td>Accessible only inside the class.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>protected</td>
+
+                            <td>Accessible inside the class and derived classes.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Access Specifier Example</h3>
+
+                    <h4>
+
+                        Ye program <b>public</b> access specifier ka use dikhata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program demonstrates the use of the public access specifier.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#accessExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="accessExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Student
+{
+public:
+
+    int marks = 90;
+
+};
+
+int main()
+{
+
+    Student s1;
+
+    cout << s1.marks;
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            90
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The data member <b>marks</b> is declared as <b>public</b>.
+
+                            <br>
+
+                            Therefore, it can be accessed directly using the object.
+
+                            <br>
+
+                            The value 90 is displayed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Constructor</h3>
+
+                    <h4>
+
+                        Constructor ek special member function hota hai jo object create hote hi automatically call ho
+                        jata hai. Iska naam hamesha class ke naam jaisa hi hota hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A constructor is a special member function that is automatically called when an object is
+                            created. Its name is always the same as the class name.</b>
+
+                    </h4>
+
+                    <pre>
+class Student
+{
+public:
+
+    Student()
+    {
+        cout << "Constructor Called";
+    }
+
+};
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Constructor object ko initialize karne ke liye use kiya jata hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Constructor Example</h3>
+
+                    <h4>
+
+                        Ye program constructor ke automatic execution ko dikhata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program demonstrates how a constructor is called automatically when an object is
+                            created.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#constructorExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="constructorExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Student
+{
+public:
+
+    Student()
+    {
+        cout << "Object Created";
+    }
+
+};
+
+int main()
+{
+
+    Student s1;
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Object Created
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            An object <b>s1</b> is created.
+
+                            <br>
+
+                            The constructor is automatically called.
+
+                            <br>
+
+                            Therefore, "Object Created" is displayed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Destructor</h3>
+
+                    <h4>
+
+                        Destructor ek special member function hota hai jo object destroy hone par automatically call
+                        hota hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A destructor is a special member function that is automatically called when an object is
+                            destroyed.</b>
+
+                    </h4>
+
+                    <pre>
+class Student
+{
+public:
+
+    ~Student()
+    {
+        cout << "Object Destroyed";
+    }
+
+};
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Destructor memory release aur cleanup tasks ke liye use hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Encapsulation</h3>
+
+                    <h4>
+
+                        Encapsulation ka matlab data aur functions ko ek hi class ke andar combine karna aur data ko
+                        direct access se protect karna hota hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Encapsulation is the process of combining data and functions into a single unit while
+                            protecting the data from direct access.</b>
+
+                    </h4>
+
+                    <pre>
+class Student
+{
+private:
+
+    int marks;
+
+public:
+
+    void setMarks(int m)
+    {
+        marks = m;
+    }
+
+    int getMarks()
+    {
+        return marks;
+    }
+
+};
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Encapsulation improves data security and prevents unauthorized access.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Inheritance</h3>
+
+                    <h4>
+
+                        Inheritance ek class ko doosri class ki properties aur functions use karne ki permission deta
+                        hai. Isse code reuse hota hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Inheritance allows one class to acquire the properties and functions of another class,
+                            improving code reusability.</b>
+
+                    </h4>
+
+                    <pre>
+class Animal
+{
+public:
+
+    void sound()
+    {
+        cout << "Animal Sound";
+    }
+
+};
+
+class Dog : public Animal
+{
+
+};
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Inheritance is useful when multiple classes share common properties and functions.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Inheritance Example</h3>
+
+                    <h4>
+
+                        Ye program inheritance ka basic example dikhata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program demonstrates basic inheritance in C++.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#inheritanceExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="inheritanceExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Animal
+{
+public:
+
+    void sound()
+    {
+        cout << "Animal Sound";
+    }
+
+};
+
+class Dog : public Animal
+{
+
+};
+
+int main()
+{
+
+    Dog d;
+
+    d.sound();
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Animal Sound
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The class <b>Dog</b> inherits from <b>Animal</b>.
+
+                            <br>
+
+                            The object <b>d</b> can directly use the <b>sound()</b> function.
+
+                            <br>
+
+                            Therefore, "Animal Sound" is displayed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Polymorphism</h3>
+
+                    <h4>
+
+                        Polymorphism ka matlab hai <b>"One Name, Many Forms"</b>. Isme ek hi function alag-alag
+                        situations me alag behavior dikhata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Polymorphism means "One Name, Many Forms". The same function can perform different tasks
+                            depending on the situation.</b>
+
+                    </h4>
+
+                    <pre>
+class Animal
+{
+public:
+
+    void sound()
+    {
+        cout << "Animal Sound";
+    }
+
+};
+
+class Dog : public Animal
+{
+public:
+
+    void sound()
+    {
+        cout << "Bark";
+    }
+
+};
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Polymorphism is useful when different objects perform the same action in different ways.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Polymorphism Example</h3>
+
+                    <h4>
+
+                        Ye program method overriding ki help se Polymorphism ko dikhata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program demonstrates polymorphism using method overriding.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#polyExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="polyExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Animal
+{
+public:
+
+    void sound()
+    {
+        cout << "Animal Sound";
+    }
+
+};
+
+class Dog : public Animal
+{
+public:
+
+    void sound()
+    {
+        cout << "Bark";
+    }
+
+};
+
+int main()
+{
+
+    Dog d;
+
+    d.sound();
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Bark
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The <b>Dog</b> class overrides the <b>sound()</b> function.
+
+                            <br>
+
+                            When <b>d.sound()</b> is called, the Dog class function executes.
+
+                            <br>
+
+                            Therefore, "Bark" is displayed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Abstraction</h3>
+
+                    <h4>
+
+                        Abstraction ka matlab sirf important information dikhana aur unnecessary details ko hide karna
+                        hota hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Abstraction means showing only the essential information while hiding unnecessary
+                            implementation details.</b>
+
+                    </h4>
+
+                    <pre>
+class Shape
+{
+public:
+
+    virtual void draw() = 0;
+
+};
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Abstraction is useful when users need to know what an object does, not how it does it.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Common Mistakes</h3>
+
+                    <ul>
+
+                        <li>Creating objects without understanding the class structure.</li>
+
+                        <li>Using private members directly outside the class.</li>
+
+                        <li>Confusing constructors with normal member functions.</li>
+
+                        <li>Forgetting inheritance syntax.</li>
+
+                        <li>Using OOP concepts where they are not required.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Important Note</h3>
+
+                    <h4>
+
+                        Har class ka ek specific purpose hona chahiye. Chhoti aur well-designed classes code ko readable
+                        aur maintainable banati hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Each class should have a single responsibility. Small and well-designed classes improve
+                            readability and maintainability.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Did You Know?</h3>
+
+                    <h4>
+
+                        Java, C++, C#, Python aur bahut si modern programming languages OOP concepts ko support karti
+                        hain. Most real-world software applications OOP par based hote hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Most modern software applications are built using Object-Oriented Programming because it
+                            improves code organization and reusability.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Summary Table</h3>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Concept</th>
+
+                            <th>Purpose</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Class</td>
+
+                            <td>Blueprint for creating objects.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Object</td>
+
+                            <td>Instance of a class.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Constructor</td>
+
+                            <td>Initializes objects automatically.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Destructor</td>
+
+                            <td>Releases resources when an object is destroyed.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Encapsulation</td>
+
+                            <td>Combines data and functions while protecting data.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Inheritance</td>
+
+                            <td>Reuses properties and functions of another class.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Polymorphism</td>
+
+                            <td>One interface with multiple behaviors.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Abstraction</td>
+
+                            <td>Hides implementation details.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Key Points</h3>
+
+                    <ul>
+
+                        <li>OOP organizes programs using classes and objects.</li>
+
+                        <li>A class is a blueprint, while an object is its instance.</li>
+
+                        <li>Constructors initialize objects automatically.</li>
+
+                        <li>Destructors perform cleanup tasks.</li>
+
+                        <li>Encapsulation improves data security.</li>
+
+                        <li>Inheritance promotes code reusability.</li>
+
+                        <li>Polymorphism allows one interface with multiple implementations.</li>
+
+                        <li>Abstraction hides unnecessary implementation details.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Practice Questions</h3>
+
+                    <ol>
+
+                        <li>What is Object-Oriented Programming?</li>
+
+                        <li>Differentiate between a Class and an Object.</li>
+
+                        <li>What is a Constructor?</li>
+
+                        <li>What is the purpose of a Destructor?</li>
+
+                        <li>Explain Encapsulation with an example.</li>
+
+                        <li>What is Inheritance? Why is it used?</li>
+
+                        <li>What is Polymorphism?</li>
+
+                        <li>Explain Abstraction with an example.</li>
+
+                        <li>Write a C++ program to create a class and an object.</li>
+
+                        <li>Write a C++ program demonstrating inheritance.</li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <a href="index.html#topics" class="home-btn">
+        <span class="glyphicon glyphicon-home"></span>
+    </a>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

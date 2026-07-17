@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to C++</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="topics.css">
+
+</head>
+
+<body>
+
+    <div class="section1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h1>POINTERS IN C++</h1>
+                </div>
+
+                <div class="col-lg-8">
+
+                    <h4>
+
+                        Pointer C++ ka ek special variable hota hai jo kisi dusre variable ki value nahi, balki uska
+                        memory address store karta hai. Pointers ka use memory management, arrays, functions aur dynamic
+                        memory allocation me kiya jata hai. Ye C++ ke sabse powerful concepts me se ek hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A pointer is a special variable that stores the memory address of another variable instead of
+                            storing its actual value. Pointers are widely used in memory management, arrays, functions,
+                            and
+                            dynamic memory allocation.</b>
+
+                    </h4>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <a href="./index.html#topics">
+
+                        <img src="pointer9.png" class="img-responsive">
+
+                    </a>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>What is a Pointer?</h3>
+
+                    <h4>
+
+                        Pointer ek aisa variable hota hai jo kisi dusre variable ka memory address store karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A pointer is a variable that stores the memory address of another variable.</b>
+
+                    </h4>
+
+                    <div class="box">
+
+                        <strong>💡 Real Life Example</strong>
+
+                        <p>
+
+                            Socho tumhare dost ka ghar hai.
+
+                        </p>
+
+                        <p>
+
+                            Ghar ke andar rehna ek alag baat hai, lekin ghar ka <b>address</b> alag hota hai.
+
+                        </p>
+
+                        <p>
+
+                            Pointer ghar ke andar ki value nahi, balki us ghar ka <b>address</b> store karta hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Why Do We Use Pointers?</h3>
+
+                    <h4>
+
+                        Pointers ka use memory ko efficiently access karne aur bade programs ko fast aur flexible banane
+                        ke
+                        liye kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Pointers help access memory efficiently and are useful for dynamic memory allocation, arrays,
+                            functions, and data structures.</b>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Store memory addresses.</li>
+
+                        <li>Access variables indirectly.</li>
+
+                        <li>Pass data efficiently to functions.</li>
+
+                        <li>Support dynamic memory allocation.</li>
+
+                        <li>Used in linked lists, trees, and other data structures.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Pointer Declaration</h3>
+
+                    <h4>
+
+                        Pointer declare karne ke liye data type ke baad <b>*</b> symbol use kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A pointer is declared using the <code>*</code> symbol after the data type.</b>
+
+                    </h4>
+
+                    <pre>
+int *ptr;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Syntax Explanation</strong>
+
+                        <ul>
+
+                            <li><b>int</b> → Data type.</li>
+
+                            <li><b>*</b> → Indicates that the variable is a pointer.</li>
+
+                            <li><b>ptr</b> → Pointer variable name.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Address Operator (&)</h3>
+
+                    <h4>
+
+                        <b>&</b> operator kisi variable ka memory address return karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>&</code> operator returns the memory address of a variable.</b>
+
+                    </h4>
+
+                    <pre>
+int num = 10;
+
+cout << &num;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Address operator ka use pointer ko kisi variable ka address dene ke liye hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Pointer Initialization</h3>
+
+                    <h4>
+
+                        Pointer ko use karne se pehle usme kisi variable ka address store karna padta hai. Is process ko
+                        <b>Pointer Initialization</b> kehte hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Pointer initialization is the process of assigning the address of a variable to a
+                            pointer.</b>
+
+                    </h4>
+
+                    <pre>
+int num = 10;
+
+int *ptr = &num;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Pointer ko initialize karne ke baad hi uske through variable ko access kiya ja sakta hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Dereference Operator (*)</h3>
+
+                    <h4>
+
+                        <b>*</b> operator ka use pointer ke andar stored address par maujood value ko access karne ke
+                        liye kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>*</code> operator is called the dereference operator. It is used to access the
+                            value stored at the memory address held by a pointer.</b>
+
+                    </h4>
+
+                    <pre>
+int num = 10;
+
+int *ptr = &num;
+
+cout << *ptr;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Dereference operator ka use pointer ke through original variable ki value ko read ya modify
+                            karne ke liye hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Pointer Example</h3>
+
+                    <h4>
+
+                        Ye program ek variable ki value aur uska memory address pointer ki help se display karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program displays the value and memory address of a variable using a pointer.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#pointerExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="pointerExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int num = 50;
+
+    int *ptr = &num;
+
+    cout << "Value = " << *ptr << endl;
+
+    cout << "Address = " << ptr;
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Value = 50
+
+                            <br>
+
+                            Address = 0x61ff08
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The variable <b>num</b> stores the value 50.
+
+                            <br>
+
+                            The pointer <b>ptr</b> stores the address of <b>num</b>.
+
+                            <br>
+
+                            Using <b>*ptr</b>, we access the value stored at that address.
+
+                            <br>
+
+                            The memory address may be different on every computer.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Changing Value Using Pointer</h3>
+
+                    <h4>
+
+                        Pointer ki help se original variable ki value ko bhi change kiya ja sakta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A pointer can also be used to modify the value of the original variable.</b>
+
+                    </h4>
+
+                    <pre>
+int num = 20;
+
+int *ptr = &num;
+
+*ptr = 100;
+
+cout << num;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Pointers allow direct modification of variables without accessing them by name.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Changing Value Example</h3>
+
+                    <h4>
+
+                        Ye program pointer ki help se variable ki value change karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program changes the value of a variable using a pointer.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#changePointerExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="changePointerExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int num = 20;
+
+    int *ptr = &num;
+
+    *ptr = 100;
+
+    cout << num;
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            100
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The pointer stores the address of <b>num</b>.
+
+                            <br>
+
+                            Using <b>*ptr = 100</b>, the value stored at that address is changed.
+
+                            <br>
+
+                            Therefore, the value of <b>num</b> becomes 100.
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>NULL Pointer</h3>
+
+                    <h4>
+
+                        Agar pointer kisi bhi valid memory address ko point nahi karta, to use <b>NULL Pointer</b> kehte
+                        hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A NULL pointer is a pointer that does not point to any valid memory location.</b>
+
+                    </h4>
+
+                    <pre>
+int *ptr = NULL;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            NULL Pointer ka use ye batane ke liye hota hai ki pointer abhi kisi memory address ko point
+                            nahi kar raha.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Pointer Arithmetic</h3>
+
+                    <h4>
+
+                        Pointer Arithmetic ka use pointer ko next ya previous memory location par move karne ke liye
+                        kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Pointer arithmetic allows a pointer to move to the next or previous memory location.</b>
+
+                    </h4>
+
+                    <pre>
+int arr[3] = {10,20,30};
+
+int *ptr = arr;
+
+ptr++;
+
+cout << *ptr;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Pointer Arithmetic arrays ko efficiently traverse karne ke liye use hoti hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Pointer Arithmetic Example</h3>
+
+                    <h4>
+
+                        Ye program pointer ko next memory location par move karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program moves the pointer to the next element of an array.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#pointerArithmeticExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="pointerArithmeticExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int arr[] = {10,20,30};
+
+    int *ptr = arr;
+
+    ptr++;
+
+    cout << *ptr;
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            20
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            Initially, the pointer points to the first element (10).
+
+                            <br>
+
+                            After <b>ptr++</b>, it moves to the second element.
+
+                            <br>
+
+                            Therefore, <b>*ptr</b> prints 20.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Pointer to Pointer</h3>
+
+                    <h4>
+
+                        Jab ek pointer dusre pointer ka address store karta hai, use <b>Pointer to Pointer</b> kehte
+                        hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A pointer to pointer is a pointer that stores the address of another pointer.</b>
+
+                    </h4>
+
+                    <pre>
+int num = 10;
+
+int *ptr = &num;
+
+int **pptr = &ptr;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Pointer to Pointer advanced programming aur dynamic memory management me use hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Pointer to Pointer Example</h3>
+
+                    <h4>
+
+                        Ye program Pointer to Pointer ka use dikhata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program demonstrates the use of a pointer to pointer.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#pointerToPointerExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="pointerToPointerExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int num = 10;
+
+    int *ptr = &num;
+
+    int **pptr = &ptr;
+
+    cout << **pptr;
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            10
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            <b>ptr</b> stores the address of <b>num</b>.
+
+                            <br>
+
+                            <b>pptr</b> stores the address of <b>ptr</b>.
+
+                            <br>
+
+                            Using <b>**pptr</b>, we access the value stored in <b>num</b>.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Void Pointer</h3>
+
+                    <h4>
+
+                        <b>Void Pointer</b> kisi bhi data type ka address store kar sakta hai, lekin use directly
+                        dereference nahi kiya ja sakta.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A void pointer can store the address of any data type, but it must be typecast before
+                            dereferencing.</b>
+
+                    </h4>
+
+                    <pre>
+int num = 10;
+
+void *ptr = &num;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Void Pointer generic programming aur memory management me use hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Wild Pointer</h3>
+
+                    <h4>
+
+                        Agar pointer declare to kar diya jaye lekin usme koi valid memory address assign na kiya jaye,
+                        to use <b>Wild Pointer</b> kehte hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A wild pointer is a pointer that has been declared but not initialized with a valid memory
+                            address.</b>
+
+                    </h4>
+
+                    <pre>
+int *ptr;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Wild Pointer ka use avoid karna chahiye kyunki ye unpredictable behavior aur program crash
+                            ka reason ban sakta hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Dangling Pointer</h3>
+
+                    <h4>
+
+                        Dangling Pointer wo pointer hota hai jo aisi memory ko point karta hai jo free ya delete ho
+                        chuki ho.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A dangling pointer points to a memory location that has already been deleted or released.</b>
+
+                    </h4>
+
+                    <pre>
+int *ptr = new int(10);
+
+delete ptr;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Memory delete karne ke baad pointer ko <b>NULL</b> kar dena ek achhi practice hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Common Mistakes</h3>
+
+                    <h4>
+
+                        Beginners pointers use karte waqt kuch common mistakes karte hain jo errors ya crashes ka reason
+                        ban sakti hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Beginners often make common mistakes while using pointers, which may lead to errors or
+                            program crashes.</b>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Using an uninitialized pointer.</li>
+
+                        <li>Dereferencing a NULL pointer.</li>
+
+                        <li>Accessing memory after deleting it.</li>
+
+                        <li>Forgetting to initialize a pointer.</li>
+
+                        <li>Confusing <b>*</b> and <b>&</b> operators.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Important Note</h3>
+
+                    <h4>
+
+                        Pointer ko use karne se pehle hamesha initialize karein. Agar pointer kisi valid address ko
+                        point nahi karta, to uska use program ko crash kar sakta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Always initialize pointers before using them. Never dereference an invalid or NULL
+                            pointer.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Did You Know?</h3>
+
+                    <h4>
+
+                        Pointers C++ ki sabse powerful features me se ek hain. Operating Systems, Game Engines, Database
+                        Systems aur Embedded Systems me pointers ka bahut use hota hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Pointers are one of the most powerful features of C++. They are widely used in operating
+                            systems, game engines, database systems, and embedded programming.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Summary Table</h3>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Concept</th>
+
+                            <th>Purpose</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Pointer</td>
+
+                            <td>Stores the address of another variable.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Address Operator (&)</td>
+
+                            <td>Returns the memory address.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Dereference Operator (*)</td>
+
+                            <td>Accesses the value stored at an address.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>NULL Pointer</td>
+
+                            <td>Points to no valid memory location.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Pointer Arithmetic</td>
+
+                            <td>Moves between memory locations.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Pointer to Pointer</td>
+
+                            <td>Stores the address of another pointer.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Void Pointer</td>
+
+                            <td>Can store the address of any data type.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Wild Pointer</td>
+
+                            <td>Uninitialized pointer.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Dangling Pointer</td>
+
+                            <td>Points to deleted memory.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Key Points</h3>
+
+                    <ul>
+
+                        <li>A pointer stores the address of another variable.</li>
+
+                        <li>Use <b>&</b> to get the address of a variable.</li>
+
+                        <li>Use <b>*</b> to access the value stored at an address.</li>
+
+                        <li>Always initialize pointers before using them.</li>
+
+                        <li>Pointer Arithmetic is mainly used with arrays.</li>
+
+                        <li>A NULL pointer does not point to any valid memory.</li>
+
+                        <li>Avoid Wild and Dangling pointers.</li>
+
+                        <li>Pointers are widely used in dynamic memory allocation and data structures.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Practice Questions</h3>
+
+                    <ol>
+
+                        <li>What is a pointer in C++?</li>
+
+                        <li>Why do we use pointers?</li>
+
+                        <li>What is the difference between <b>*</b> and <b>&</b> operators?</li>
+
+                        <li>What is a NULL pointer?</li>
+
+                        <li>Explain Pointer Arithmetic with an example.</li>
+
+                        <li>What is a Pointer to Pointer?</li>
+
+                        <li>What is a Void Pointer?</li>
+
+                        <li>Differentiate between a Wild Pointer and a Dangling Pointer.</li>
+
+                        <li>Write a C++ program to print the value and address of a variable using a pointer.</li>
+
+                        <li>Write a C++ program to change the value of a variable using a pointer.</li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <a href="index.html#topics" class="home-btn">
+        <span class="glyphicon glyphicon-home"></span>
+    </a>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

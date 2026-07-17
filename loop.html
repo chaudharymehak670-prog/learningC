@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to C++</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="topics.css">
+
+</head>
+
+<body>
+    <div class="section1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h1>LOOPS IN C++</h1>
+                </div>
+
+                <div class="col-lg-8">
+
+                    <h4>
+                        Loops C++ me kisi statement ya statements ke group ko baar-baar execute karne ke liye use kiye
+                        jaate hain. Agar hume same task multiple times perform karna ho, to har baar code likhne ki
+                        jagah
+                        hum loop ka use karte hain. Isse code chhota, readable aur efficient ban jata hai.
+                    </h4>
+
+                    <h4>
+                        <b>Loops are used to execute a block of code repeatedly until a specified condition becomes
+                            false.
+                            They reduce code repetition and make programs more efficient.</b>
+                    </h4>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <a href="./index.html#topics">
+                        <img src="loop5.png" class="img-responsive">
+                    </a>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>What are Loops?</h3>
+
+                    <h4>
+                        Loop ek programming structure hai jo kisi block of code ko tab tak repeat karta hai jab tak di
+                        hui
+                        condition true rehti hai.
+                    </h4>
+
+                    <h4>
+                        <b>A loop is a programming structure that repeatedly executes a block of code as long as the
+                            given
+                            condition is true.</b>
+                    </h4>
+
+                    <div class="box">
+
+                        <strong>💡 Real Life Example</strong>
+
+                        <p>
+
+                            Socho teacher ne bola ki apna naam <b>100 baar</b> likho.
+
+                            Agar loop na ho to tumhe 100 baar same statement likhni padegi.
+
+                            Loop ki help se sirf ek baar code likhkar wahi kaam 100 baar kar sakte ho.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Why Do We Use Loops?</h3>
+
+                    <h4>
+                        Loops ka use repeated tasks ko automatically perform karne ke liye kiya jata hai. Ye code ko
+                        short,
+                        fast aur easy banate hain.
+                    </h4>
+
+                    <h4>
+                        <b>Loops are used to perform repetitive tasks automatically. They reduce code duplication and
+                            improve efficiency.</b>
+                    </h4>
+
+                    <ul>
+
+                        <li>Avoid writing the same code multiple times.</li>
+
+                        <li>Reduce program length.</li>
+
+                        <li>Improve code readability.</li>
+
+                        <li>Save time and effort.</li>
+
+                        <li>Useful for processing arrays, patterns, and tables.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Types of Loops</h3>
+
+                    <h4>
+
+                        C++ me mainly teen types ke loops use kiye jaate hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>C++ mainly provides three types of loops.</b>
+
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Loop</th>
+
+                            <th>Use</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>for Loop</td>
+
+                            <td>When the number of iterations is known.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>while Loop</td>
+
+                            <td>When the condition is checked before execution.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>do...while Loop</td>
+
+                            <td>When the loop should execute at least once.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>for Loop</h3>
+
+                    <h4>
+
+                        <b>for</b> loop tab use kiya jata hai jab hume pehle se pata ho ki loop kitni baar chalega.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>for</code> loop is used when the number of iterations is known in advance.</b>
+
+                    </h4>
+
+                    <pre>
+for(initialization; condition; increment/decrement)
+{
+    // code
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Print tables, numbers, patterns aur fixed number of repetitions ke liye <b>for loop</b>
+                            sabse best choice hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>for Loop Example</h3>
+
+                    <h4>
+
+                        Neeche diya gaya program <b>1 se 5</b> tak numbers print karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The following program prints numbers from 1 to 5 using a for loop.</b>
+
+                    </h4>
+
+                    <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    for(int i = 1; i <= 5; i++)
+    {
+        cout << i << " ";
+    }
+
+    return 0;
+
+}
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#forExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View output
+
+                    </a>
+
+                    <div id="forExample" class="collapse">
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            1 2 3 4 5
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>while Loop</h3>
+
+                    <h4>
+
+                        <b>while</b> loop tab use kiya jata hai jab hume pehle se nahi pata hota ki loop kitni baar
+                        chalega. Ye har iteration se pehle condition check karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>while</code> loop is used when the number of iterations is unknown. It checks the
+                            condition before executing the loop body.</b>
+
+                    </h4>
+
+                    <pre>
+while(condition)
+{
+    // code
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Menu-driven programs, user input validation aur condition-based repetition ke liye <b>while
+                                loop</b> ka use kiya jata hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>while Loop Example</h3>
+
+                    <h4>
+
+                        Is example me <b>while loop</b> ki help se 1 se 5 tak numbers print kiye gaye hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This example prints numbers from 1 to 5 using a while loop.</b>
+
+                    </h4>
+
+                    <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int i = 1;
+
+    while(i <= 5)
+    {
+        cout << i << " ";
+        i++;
+    }
+
+    return 0;
+
+}
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#whileExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View output
+
+                    </a>
+
+                    <div id="whileExample" class="collapse">
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            1 2 3 4 5
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>do...while Loop</h3>
+
+                    <h4>
+
+                        <b>do...while</b> loop me code pehle execute hota hai aur uske baad condition check hoti hai.
+                        Isliye ye loop kam se kam ek baar zaroor chalta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>do...while</code> loop executes the code first and checks the condition afterward.
+                            Therefore, it always runs at least once.</b>
+
+                    </h4>
+
+                    <pre>
+do
+{
+    // code
+}
+while(condition);
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Jab program ko minimum ek baar execute karna zaroori ho, tab <b>do...while</b> loop use kiya
+                            jata hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>do...while Loop Example</h3>
+
+                    <h4>
+
+                        Is example me <b>do...while loop</b> ki help se 1 se 5 tak numbers print kiye gaye hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This example prints numbers from 1 to 5 using a do...while loop.</b>
+
+                    </h4>
+
+                    <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int i = 1;
+
+    do
+    {
+        cout << i << " ";
+        i++;
+    }
+    while(i <= 5);
+
+    return 0;
+
+}
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#dowhileExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View output
+
+                    </a>
+
+                    <div id="dowhileExample" class="collapse">
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            1 2 3 4 5
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Nested Loop</h3>
+
+                    <h4>
+                        Jab ek loop ke andar dusra loop use kiya jata hai, use <b>Nested Loop</b> kehte hain. Ye
+                        patterns, matrices aur
+                        tables banane ke liye use hota hai.
+                    </h4>
+
+                    <h4>
+                        <b>A nested loop is a loop inside another loop. It is commonly used for patterns, matrices, and
+                            tables.</b>
+                    </h4>
+
+                    <pre>
+for(int i=1; i<=3; i++)
+{
+    for(int j=1; j<=3; j++)
+    {
+        cout << "* ";
+    }
+
+    cout << endl;
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Nested loops are useful for printing patterns, working with 2D arrays, and creating
+                            multiplication tables.
+
+                        </p>
+
+                    </div>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#nestedExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View output
+
+                    </a>
+
+                    <div id="nestedExample" class="collapse">
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            * * *
+
+                            <br>
+
+                            * * *
+
+                            <br>
+
+                            * * *
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Infinite Loop</h3>
+
+                    <h4>
+
+                        Jab loop ki condition kabhi false nahi hoti, tab loop continuously chalta rehta hai. Isse
+                        <b>Infinite Loop</b> kehte hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>An infinite loop runs forever because its condition never becomes false.</b>
+
+                    </h4>
+
+                    <pre>
+while(true)
+{
+    cout << "Hello";
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>⚠ Important</strong>
+
+                        <p>
+
+                            Infinite loops generally avoid karne chahiye. Inhe sirf special situations jaise game loops
+                            ya servers me use kiya jata hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>break Statement</h3>
+
+                    <h4>
+
+                        <b>break</b> statement loop ko turant stop kar deta hai aur control loop ke bahar chala jata
+                        hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>break</code> statement immediately terminates the loop.</b>
+
+                    </h4>
+
+                    <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    for(int i=1; i<=10; i++)
+    {
+        if(i==6)
+        {
+            break;
+        }
+
+        cout << i << " ";
+    }
+
+    return 0;
+
+}
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#breakExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View output
+
+                    </a>
+
+                    <div id="breakExample" class="collapse">
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            1 2 3 4 5
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>continue Statement</h3>
+
+                    <h4>
+
+                        <b>continue</b> statement current iteration ko skip karta hai aur next iteration start kar deta
+                        hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>continue</code> statement skips the current iteration and continues with the next
+                            iteration.</b>
+
+                    </h4>
+
+                    <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    for(int i=1; i<=5; i++)
+    {
+        if(i==3)
+        {
+            continue;
+        }
+
+        cout << i << " ";
+    }
+
+    return 0;
+
+}
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#continueExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View output
+
+                    </a>
+
+                    <div id="continueExample" class="collapse">
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            1 2 4 5
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Common Mistakes</h3>
+
+                    <h4>
+
+                        Beginners loops use karte waqt kuch common mistakes kar dete hain. In mistakes ki wajah se
+                        program galat output de sakta hai ya infinite loop me fas sakta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Beginners often make common mistakes while using loops, which may lead to incorrect output or
+                            infinite loops.</b>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Forgetting to update the loop variable.</li>
+
+                        <li>Using the wrong loop condition.</li>
+
+                        <li>Missing semicolon after <code>do...while</code>.</li>
+
+                        <li>Writing an incorrect initialization value.</li>
+
+                        <li>Creating an unintended infinite loop.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Important Note</h3>
+
+                    <h4>
+
+                        Har loop me <b>initialization</b>, <b>condition</b> aur <b>increment/decrement</b> ka sahi use
+                        bahut important hai. Agar inme se koi bhi galat ho to program expected result nahi dega.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Every loop should have proper initialization, condition, and increment/decrement. Otherwise,
+                            the program may produce incorrect results or run infinitely.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Did You Know?</h3>
+
+                    <h4>
+
+                        Loops ka use sirf numbers print karne ke liye nahi hota. Inka use games, searching, sorting,
+                        arrays, matrices, file handling aur Artificial Intelligence applications me bhi hota hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Loops are widely used in games, searching, sorting, arrays, file handling, graphics, and
+                            Artificial Intelligence applications.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Summary Table</h3>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Loop</th>
+
+                            <th>Best Use</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>for Loop</td>
+
+                            <td>Known number of iterations.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>while Loop</td>
+
+                            <td>Condition-based repetition.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>do...while Loop</td>
+
+                            <td>Executes at least once.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Nested Loop</td>
+
+                            <td>Patterns, tables and 2D arrays.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>break</td>
+
+                            <td>Terminates the loop immediately.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>continue</td>
+
+                            <td>Skips the current iteration.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Key Points</h3>
+
+                    <ul>
+
+                        <li>Loops execute a block of code repeatedly.</li>
+
+                        <li>for loop is used when the number of iterations is known.</li>
+
+                        <li>while loop checks the condition before execution.</li>
+
+                        <li>do...while loop executes at least once.</li>
+
+                        <li>Nested loops are useful for patterns and matrices.</li>
+
+                        <li>break exits the loop immediately.</li>
+
+                        <li>continue skips the current iteration.</li>
+
+                        <li>Avoid creating infinite loops unless required.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Practice Questions</h3>
+
+                    <ol>
+
+                        <li>What is a loop in C++?</li>
+
+                        <li>Why do we use loops?</li>
+
+                        <li>Differentiate between <b>for</b>, <b>while</b>, and <b>do...while</b> loops.</li>
+
+                        <li>What is a nested loop?</li>
+
+                        <li>What is an infinite loop?</li>
+
+                        <li>Explain the use of the <b>break</b> statement.</li>
+
+                        <li>Explain the use of the <b>continue</b> statement.</li>
+
+                        <li>Write a program to print numbers from 1 to 10 using a <b>for</b> loop.</li>
+
+                        <li>Write a program to print the multiplication table of 5.</li>
+
+                        <li>Write a program to print the following pattern:</li>
+
+                    </ol>
+
+                    <pre>
+*
+* *
+* * *
+* * * *
+* * * * *
+</pre>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <a href="index.html#topics" class="home-btn">
+        <span class="glyphicon glyphicon-home"></span>
+    </a>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

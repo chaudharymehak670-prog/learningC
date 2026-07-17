@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to C++</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="topics.css">
+</head>
+
+<body>
+
+    <div class="section1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h1>DATA TYPES IN C++</h1>
+                </div>
+
+                <div class="col-lg-8">
+
+                    <h4>
+                        Data Types C++ me variables ke type ko define karte hain. Ye batate hain ki variable kis type ka
+                        data store karega, jaise integer, decimal number, character ya text. Data types ki help se
+                        compiler
+                        memory allocate karta hai aur data ko efficiently manage karta hai.
+                    </h4>
+
+                    <h4>
+                        <b>Data types define the type of data that a variable can store. They help the compiler allocate
+                            memory efficiently and perform operations correctly.</b>
+                    </h4>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <a href="./index.html#topics">
+                        <img src="datatype3.png" class="img-responsive">
+                    </a>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>What are Data Types?</h3>
+
+                    <h4>
+                        Data Type ek category hoti hai jo batati hai ki variable kis tarah ki value store karega. Har
+                        variable ko declare karte time uska data type likhna zaroori hota hai.
+                    </h4>
+
+                    <h4>
+                        <b>A data type specifies the type of value that a variable can store. Every variable must have a
+                            data type before it is used.</b>
+                    </h4>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Why Do We Use Data Types?</h3>
+
+                    <h4>
+                        Data Types ka use compiler ko ye batane ke liye kiya jata hai ki variable kitni memory use
+                        karega
+                        aur us par kis type ke operations perform kiye ja sakte hain.
+                    </h4>
+
+                    <h4>
+                        <b>Data types help the compiler allocate memory, store data efficiently, and perform valid
+                            operations on variables.</b>
+                    </h4>
+
+                    <ul>
+
+                        <li>Allocate memory efficiently.</li>
+
+                        <li>Store different types of data.</li>
+
+                        <li>Improve program performance.</li>
+
+                        <li>Reduce programming errors.</li>
+
+                        <li>Make programs easy to understand.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Types of Data Types</h3>
+
+                    <h4>
+                        C++ me Data Types ko mainly teen categories me divide kiya jata hai.
+                    </h4>
+
+                    <h4>
+                        <b>C++ data types are mainly classified into three categories.</b>
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Category</th>
+
+                            <th>Description</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Primitive Data Types</td>
+
+                            <td>Basic built-in data types.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Derived Data Types</td>
+
+                            <td>Created from primitive data types.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>User-defined Data Types</td>
+
+                            <td>Created by the programmer.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Primitive Data Types</h3>
+
+                    <h4>
+                        Primitive Data Types C++ ke basic built-in data types hote hain. Inka use numbers, characters,
+                        decimal values aur true/false values ko store karne ke liye kiya jata hai.
+                    </h4>
+
+                    <h4>
+                        <b>Primitive data types are the basic built-in data types provided by C++. They are used to
+                            store
+                            numbers, characters, decimal values, and boolean values.</b>
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Description</th>
+                            <th>Example</th>
+                        </tr>
+
+                        <tr>
+                            <td>int</td>
+                            <td>Stores whole numbers</td>
+                            <td>25</td>
+                        </tr>
+
+                        <tr>
+                            <td>float</td>
+                            <td>Stores decimal numbers</td>
+                            <td>12.5</td>
+                        </tr>
+
+                        <tr>
+                            <td>double</td>
+                            <td>Stores large decimal values</td>
+                            <td>25.67895</td>
+                        </tr>
+
+                        <tr>
+                            <td>char</td>
+                            <td>Stores a single character</td>
+                            <td>'A'</td>
+                        </tr>
+
+                        <tr>
+                            <td>bool</td>
+                            <td>Stores true or false</td>
+                            <td>true</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Derived Data Types</h3>
+
+                    <h4>
+                        Derived Data Types basic data types se milkar bante hain. Ye complex data ko store aur manage
+                        karne
+                        ke liye use hote hain.
+                    </h4>
+
+                    <h4>
+                        <b>Derived data types are created from primitive data types and are used to store more complex
+                            data.</b>
+                    </h4>
+
+                    <ul>
+
+                        <li>Array</li>
+
+                        <li>Pointer</li>
+
+                        <li>Function</li>
+
+                        <li>Reference</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>User-defined Data Types</h3>
+
+                    <h4>
+                        User-defined Data Types programmer khud create karta hai according to program requirements.
+                    </h4>
+
+                    <h4>
+                        <b>User-defined data types are created by programmers to meet specific program requirements.</b>
+                    </h4>
+
+                    <ul>
+
+                        <li>Class</li>
+
+                        <li>Structure (struct)</li>
+
+                        <li>Union</li>
+
+                        <li>Enumeration (enum)</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>sizeof() Operator</h3>
+
+                    <h4>
+                        sizeof() operator kisi bhi data type ya variable ki memory size (bytes me) batata hai.
+                    </h4>
+
+                    <h4>
+                        <b>The sizeof() operator returns the memory size of a data type or variable in bytes.</b>
+                    </h4>
+
+                    <pre>
+cout << sizeof(int);
+</pre>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Data Type Syntax</h3>
+
+                    <pre>
+dataType variableName;
+
+int age;
+
+float salary;
+
+char grade;
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#datatypeExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Examples
+
+                    </a>
+
+                    <div id="datatypeExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main(){
+
+int age = 20;
+
+float marks = 89.5;
+
+char grade = 'A';
+
+bool pass = true;
+
+cout << age << endl;
+
+cout << marks << endl;
+
+cout << grade << endl;
+
+cout << pass;
+
+return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br>
+
+                            20
+
+                            <br>
+
+                            89.5
+
+                            <br>
+
+                            A
+
+                            <br>
+
+                            1
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Did You Know?</h3>
+
+                    <h4>
+                        Har Data Type ki memory size compiler aur operating system ke according thodi different ho sakti
+                        hai. Isliye memory size check karne ke liye <b>sizeof()</b> operator ka use kiya jata hai.
+                    </h4>
+
+                    <h4>
+                        <b>The size of a data type may vary depending on the compiler and operating system. The
+                            <code>sizeof()</code> operator is used to determine the memory size.</b>
+                    </h4>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Summary Table</h3>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Concept</th>
+
+                            <th>Description</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Data Type</td>
+
+                            <td>Defines the type of data a variable can store.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Primitive</td>
+
+                            <td>Basic built-in data types.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Derived</td>
+
+                            <td>Created from primitive data types.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>User-defined</td>
+
+                            <td>Created by the programmer.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>sizeof()</td>
+
+                            <td>Returns memory size in bytes.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Key Points</h3>
+
+                    <ul>
+
+                        <li>Every variable must have a data type.</li>
+
+                        <li>Data types decide how much memory a variable requires.</li>
+
+                        <li>Primitive data types are built into C++.</li>
+
+                        <li>Derived data types are created from basic data types.</li>
+
+                        <li>User-defined data types are created by programmers.</li>
+
+                        <li>The <b>sizeof()</b> operator returns memory size in bytes.</li>
+
+                        <li>Choosing the correct data type improves memory usage and program performance.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Practice Questions</h3>
+
+                    <ol>
+
+                        <li>What is a data type?</li>
+
+                        <li>Why do we use data types in C++?</li>
+
+                        <li>Name the three categories of data types.</li>
+
+                        <li>What are primitive data types?</li>
+
+                        <li>Give any four examples of primitive data types.</li>
+
+                        <li>What are derived data types?</li>
+
+                        <li>What are user-defined data types?</li>
+
+                        <li>What is the use of the <b>sizeof()</b> operator?</li>
+
+                        <li>Write the syntax for declaring variables of different data types.</li>
+
+                        <li>Write a C++ program using <b>int</b>, <b>float</b>, <b>char</b>, and <b>bool</b> variables.
+                        </li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <a href="index.html#topics" class="home-btn">
+        <span class="glyphicon glyphicon-home"></span>
+    </a>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

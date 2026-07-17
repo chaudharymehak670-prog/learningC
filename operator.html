@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to C++</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="topics.css">
+
+</head>
+
+<body>
+    <div class="section1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h1>OPERATORS IN C++</h1>
+                </div>
+
+                <div class="col-lg-8">
+
+                    <h4>
+                        Operators C++ me special symbols hote hain jo variables aur values par different operations
+                        perform
+                        karte hain. Inki help se hum addition, subtraction, comparison, logical operations aur
+                        assignment
+                        jaise kaam kar sakte hain. Operators programming ko simple aur efficient banate hain.
+                    </h4>
+
+                    <h4>
+                        <b>Operators are special symbols that perform operations on variables and values. They are used
+                            to
+                            perform arithmetic, comparison, logical, assignment, and many other operations in C++.</b>
+                    </h4>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <a href="./index.html#topics">
+                        <img src="operator4.png" class="img-responsive">
+                    </a>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>What are Operators?</h3>
+
+                    <h4>
+                        Operator ek special symbol hota hai jo operands (variables ya values) par operation perform
+                        karta
+                        hai aur ek result return karta hai.
+                    </h4>
+
+                    <h4>
+                        <b>An operator is a special symbol that performs an operation on one or more operands and
+                            produces a
+                            result.</b>
+                    </h4>
+
+                    <div class="box">
+
+                        <strong>💡 Real Life Example</strong>
+
+                        <p>
+
+                            Agar tum calculator me <b>10 + 5</b> likhte ho to <b>+</b> ek operator hai aur <b>10</b> aur
+                            <b>5</b> operands hain.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Why Do We Use Operators?</h3>
+
+                    <h4>
+                        Operators ka use calculations karne, values compare karne, conditions check karne aur variables
+                        ki
+                        value update karne ke liye kiya jata hai.
+                    </h4>
+
+                    <h4>
+                        <b>Operators are used to perform calculations, compare values, evaluate conditions, and update
+                            variables.</b>
+                    </h4>
+
+                    <ul>
+
+                        <li>Perform mathematical calculations.</li>
+
+                        <li>Compare two values.</li>
+
+                        <li>Check logical conditions.</li>
+
+                        <li>Assign values to variables.</li>
+
+                        <li>Increase or decrease values.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Types of Operators</h3>
+
+                    <h4>
+
+                        C++ me operators ko unke kaam ke according different categories me divide kiya gaya hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>C++ operators are classified into different categories based on the operations they
+                            perform.</b>
+
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Operator Type</th>
+
+                            <th>Purpose</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Arithmetic</td>
+
+                            <td>Performs mathematical operations.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Relational</td>
+
+                            <td>Compares two values.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Logical</td>
+
+                            <td>Checks logical conditions.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Assignment</td>
+
+                            <td>Assigns values to variables.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Increment / Decrement</td>
+
+                            <td>Increases or decreases values.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Bitwise</td>
+
+                            <td>Performs operations on bits.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Ternary</td>
+
+                            <td>Works as a short form of if-else.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Arithmetic Operators</h3>
+
+                    <h4>
+                        Arithmetic Operators ka use mathematical calculations jaise addition, subtraction,
+                        multiplication, division aur remainder nikalne ke liye kiya jata hai.
+                    </h4>
+
+                    <h4>
+                        <b>Arithmetic operators are used to perform mathematical calculations such as addition,
+                            subtraction, multiplication, division, and modulus.</b>
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+                            <th>Operator</th>
+                            <th>Name</th>
+                            <th>Example</th>
+                        </tr>
+
+                        <tr>
+                            <td>+</td>
+                            <td>Addition</td>
+                            <td>a + b</td>
+                        </tr>
+
+                        <tr>
+                            <td>-</td>
+                            <td>Subtraction</td>
+                            <td>a - b</td>
+                        </tr>
+
+                        <tr>
+                            <td>*</td>
+                            <td>Multiplication</td>
+                            <td>a * b</td>
+                        </tr>
+
+                        <tr>
+                            <td>/</td>
+                            <td>Division</td>
+                            <td>a / b</td>
+                        </tr>
+
+                        <tr>
+                            <td>%</td>
+                            <td>Modulus</td>
+                            <td>a % b</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Arithmetic Operator Example</h3>
+
+                    <h4>
+                        Neeche diye gaye program me hum sabhi Arithmetic Operators ka use kar rahe hain.
+                    </h4>
+
+                    <h4>
+                        <b>The following program demonstrates the use of all arithmetic operators.</b>
+                    </h4>
+
+                    <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int a = 20;
+    int b = 5;
+
+    cout << "Addition = " << a + b << endl;
+
+    cout << "Subtraction = " << a - b << endl;
+
+    cout << "Multiplication = " << a * b << endl;
+
+    cout << "Division = " << a / b << endl;
+
+    cout << "Modulus = " << a % b;
+
+    return 0;
+
+}
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#arithmeticExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View output
+
+                    </a>
+
+                    <div id="arithmeticExample" class="collapse">
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Addition = 25
+
+                            <br>
+
+                            Subtraction = 15
+
+                            <br>
+
+                            Multiplication = 100
+
+                            <br>
+
+                            Division = 4
+
+                            <br>
+
+                            Modulus = 0
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Relational Operators</h3>
+
+                    <h4>
+
+                        Relational Operators do values ko compare karte hain aur result me <b>true</b> ya <b>false</b>
+                        return karte hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Relational operators compare two values and return either true or false.</b>
+
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Operator</th>
+
+                            <th>Meaning</th>
+
+                            <th>Example</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>==</td>
+
+                            <td>Equal to</td>
+
+                            <td>a == b</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>!=</td>
+
+                            <td>Not Equal to</td>
+
+                            <td>a != b</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>&gt;</td>
+
+                            <td>Greater than</td>
+
+                            <td>a &gt; b</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>&lt;</td>
+
+                            <td>Less than</td>
+
+                            <td>a &lt; b</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>&gt;=</td>
+
+                            <td>Greater than or Equal to</td>
+
+                            <td>a &gt;= b</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>&lt;=</td>
+
+                            <td>Less than or Equal to</td>
+
+                            <td>a &lt;= b</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Relational Operator Example</h3>
+
+                    <h4>
+
+                        Ye example dikhata hai ki Relational Operators comparison kaise karte hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This example shows how relational operators compare two values.</b>
+
+                    </h4>
+
+                    <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    int a = 20;
+    int b = 10;
+
+    cout << (a > b) << endl;
+
+    cout << (a == b) << endl;
+
+    cout << (a != b);
+
+    return 0;
+
+}
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#relationExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View output
+
+                    </a>
+
+                    <div id="relationExample" class="collapse">
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            1
+
+                            <br>
+
+                            0
+
+                            <br>
+
+                            1
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Logical Operators</h3>
+
+                    <h4>
+                        Logical Operators ka use ek ya ek se zyada conditions ko combine karne ke liye kiya jata hai. Ye
+                        mostly
+                        <b>if</b>, <b>while</b> aur loops me use hote hain.
+                    </h4>
+
+                    <h4>
+                        <b>Logical operators are used to combine two or more conditions. They return either true or
+                            false.</b>
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+                            <th>Operator</th>
+                            <th>Name</th>
+                            <th>Example</th>
+                        </tr>
+
+                        <tr>
+                            <td>&&</td>
+                            <td>Logical AND</td>
+                            <td>a > 10 && b < 20</td>
+                        </tr>
+
+                        <tr>
+                            <td>||</td>
+                            <td>Logical OR</td>
+                            <td>a > 10 || b < 20</td>
+                        </tr>
+
+                        <tr>
+                            <td>!</td>
+                            <td>Logical NOT</td>
+                            <td>!(a > b)</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Logical Operator Example</h3>
+
+                    <h4>
+                        Is example me AND, OR aur NOT operators ka use dikhaya gaya hai.
+                    </h4>
+
+                    <h4>
+                        <b>This example demonstrates the use of logical operators.</b>
+                    </h4>
+
+                    <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    int age = 20;
+
+    cout << (age >= 18 && age <= 60) << endl;
+
+    cout << (age < 18 || age > 60) << endl;
+
+    cout << !(age == 20);
+
+    return 0;
+}
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#logicalExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View output
+
+                    </a>
+
+                    <div id="logicalExample" class="collapse">
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            1
+
+                            <br>
+
+                            0
+
+                            <br>
+
+                            0
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Assignment Operators</h3>
+
+                    <h4>
+                        Assignment Operators ka use variables ko value assign karne ke liye kiya jata hai. Kuch
+                        assignment operators
+                        calculation bhi karte hain aur result ko variable me store kar dete hain.
+                    </h4>
+
+                    <h4>
+                        <b>Assignment operators are used to assign values to variables. Some operators perform
+                            calculations and assign
+                            the result at the same time.</b>
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+                            <th>Operator</th>
+                            <th>Meaning</th>
+                            <th>Example</th>
+                        </tr>
+
+                        <tr>
+                            <td>=</td>
+                            <td>Assign</td>
+                            <td>a = 10</td>
+                        </tr>
+
+                        <tr>
+                            <td>+=</td>
+                            <td>Add and Assign</td>
+                            <td>a += 5</td>
+                        </tr>
+
+                        <tr>
+                            <td>-=</td>
+                            <td>Subtract and Assign</td>
+                            <td>a -= 2</td>
+                        </tr>
+
+                        <tr>
+                            <td>*=</td>
+                            <td>Multiply and Assign</td>
+                            <td>a *= 3</td>
+                        </tr>
+
+                        <tr>
+                            <td>/=</td>
+                            <td>Divide and Assign</td>
+                            <td>a /= 2</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Assignment Operator Example</h3>
+
+                    <h4>
+
+                        Neeche diya gaya program Assignment Operators ka use dikhata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The following program demonstrates assignment operators.</b>
+
+                    </h4>
+
+                    <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+int a = 10;
+
+a += 5;
+
+cout << a << endl;
+
+a *= 2;
+
+cout << a;
+
+return 0;
+
+}
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#assignExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Output
+
+                    </a>
+
+                    <div id="assignExample" class="collapse">
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            15
+
+                            <br>
+
+                            30
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Increment and Decrement Operators</h3>
+
+                    <h4>
+
+                        Increment Operator variable ki value ko <b>1</b> se increase karta hai, jabki Decrement Operator
+                        value ko <b>1</b> se decrease karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Increment increases a variable by one, while decrement decreases a variable by one.</b>
+
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Operator</th>
+
+                            <th>Name</th>
+
+                            <th>Example</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>++</td>
+
+                            <td>Increment</td>
+
+                            <td>++a</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>--</td>
+
+                            <td>Decrement</td>
+
+                            <td>--a</td>
+
+                        </tr>
+
+                    </table>
+
+                    <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+int a = 5;
+
+a++;
+
+cout << a << endl;
+
+a--;
+
+cout << a;
+
+return 0;
+
+}
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#incExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Output
+
+                    </a>
+
+                    <div id="incExample" class="collapse">
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            6
+
+                            <br>
+
+                            5
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Bitwise Operators</h3>
+
+                    <h4>
+                        Bitwise Operators binary bits par operation perform karte hain. Ye mostly low-level programming
+                        aur memory
+                        manipulation me use hote hain.
+                    </h4>
+
+                    <h4>
+                        <b>Bitwise operators perform operations on binary bits. They are mainly used in system
+                            programming and memory manipulation.</b>
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+                            <th>Operator</th>
+                            <th>Name</th>
+                            <th>Example</th>
+                        </tr>
+
+                        <tr>
+                            <td>&</td>
+                            <td>Bitwise AND</td>
+                            <td>a & b</td>
+                        </tr>
+
+                        <tr>
+                            <td>|</td>
+                            <td>Bitwise OR</td>
+                            <td>a | b</td>
+                        </tr>
+
+                        <tr>
+                            <td>^</td>
+                            <td>Bitwise XOR</td>
+                            <td>a ^ b</td>
+                        </tr>
+
+                        <tr>
+                            <td>~</td>
+                            <td>Bitwise NOT</td>
+                            <td>~a</td>
+                        </tr>
+
+                        <tr>
+                            <td>&lt;&lt;</td>
+                            <td>Left Shift</td>
+                            <td>a << 2</td>
+                        </tr>
+
+                        <tr>
+                            <td>&gt;&gt;</td>
+                            <td>Right Shift</td>
+                            <td>a >> 2</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Ternary Operator</h3>
+
+                    <h4>
+
+                        Ternary Operator <b>if...else</b> ka short form hota hai. Ye condition check karta hai aur uske
+                        according result return karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The ternary operator is a shorthand form of the if...else statement.</b>
+
+                    </h4>
+
+                    <pre>
+condition ? expression1 : expression2;
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#ternaryExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Output
+
+                    </a>
+
+                    <div id="ternaryExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+
+int age = 20;
+
+(age >= 18) ? cout << "Eligible" : cout << "Not Eligible";
+
+return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Eligible
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Operator Precedence</h3>
+
+                    <h4>
+
+                        Jab ek expression me ek se zyada operators hote hain, tab C++ pehle higher precedence wale
+                        operator ko execute karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Operator precedence decides which operator is evaluated first in an expression.</b>
+
+                    </h4>
+
+                    <pre>
+int result = 5 + 3 * 2;
+</pre>
+
+                    <div class="output">
+
+                        <b>Output</b>
+
+                        <br><br>
+
+                        11
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Important Note</h3>
+
+                    <h4>
+
+                        Parentheses <b>()</b> ka use karne se operator precedence change ki ja sakti hai aur code ko
+                        zyada readable banaya ja sakta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Using parentheses improves readability and changes the order of evaluation when required.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Did You Know?</h3>
+
+                    <h4>
+
+                        Calculator se lekar Game Development aur Artificial Intelligence tak har jagah operators ka use
+                        hota hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Operators are used in almost every C++ program, from simple calculators to advanced games and
+                            AI applications.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Summary Table</h3>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Operator Type</th>
+
+                            <th>Purpose</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Arithmetic</td>
+
+                            <td>Performs mathematical operations.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Relational</td>
+
+                            <td>Compares two values.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Logical</td>
+
+                            <td>Combines multiple conditions.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Assignment</td>
+
+                            <td>Assigns values to variables.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Increment / Decrement</td>
+
+                            <td>Increase or decrease value by one.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Bitwise</td>
+
+                            <td>Performs operations on binary bits.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Ternary</td>
+
+                            <td>Short form of if...else.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Key Points</h3>
+
+                    <ul>
+
+                        <li>Operators perform operations on variables and values.</li>
+
+                        <li>Arithmetic operators are used for calculations.</li>
+
+                        <li>Relational operators compare values.</li>
+
+                        <li>Logical operators combine conditions.</li>
+
+                        <li>Assignment operators assign values.</li>
+
+                        <li>Increment and decrement operators change values by one.</li>
+
+                        <li>Bitwise operators work on binary data.</li>
+
+                        <li>Ternary operator is the short form of if...else.</li>
+
+                        <li>Operator precedence determines the order of execution.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Practice Questions</h3>
+
+                    <ol>
+
+                        <li>What are operators in C++?</li>
+
+                        <li>Why do we use operators?</li>
+
+                        <li>Name different types of operators.</li>
+
+                        <li>Differentiate between arithmetic and relational operators.</li>
+
+                        <li>What is the use of logical operators?</li>
+
+                        <li>Explain assignment operators with an example.</li>
+
+                        <li>What is the difference between increment and decrement operators?</li>
+
+                        <li>What is the ternary operator?</li>
+
+                        <li>What is operator precedence?</li>
+
+                        <li>Write a C++ program demonstrating arithmetic, relational, and logical operators.</li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html#topics" class="home-btn">
+        <span class="glyphicon glyphicon-home"></span>
+    </a>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

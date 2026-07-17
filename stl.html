@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to C++</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="topics.css">
+</head>
+
+<body>
+
+    <div class="section1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h1>STANDARD TEMPLATE LIBRARY (STL)</h1>
+                </div>
+
+                <div class="col-lg-8">
+
+                    <h4>
+
+                        Standard Template Library (STL) C++ ki ek powerful library hai jo ready-made classes aur
+                        functions provide karti hai. STL ka use data ko efficiently store, organize aur process karne ke
+                        liye kiya jata hai. Isme Containers, Iterators aur Algorithms jaise components hote hain jo
+                        programming ko fast aur easy bana dete hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The Standard Template Library (STL) is a powerful library in C++ that provides ready-made
+                            classes and functions for storing, managing, and processing data efficiently.</b>
+
+                    </h4>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <a href="./index.html#topics">
+
+                        <img src="stl12.png" class="img-responsive">
+
+                    </a>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>What is STL?</h3>
+
+                    <h4>
+
+                        STL C++ ki ek built-in library hai jo ready-made data structures aur algorithms provide karti
+                        hai. Iski help se programmer ko har cheez khud se nahi likhni padti.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>STL is a built-in library in C++ that provides ready-made data structures and algorithms,
+                            making programming faster and easier.</b>
+
+                    </h4>
+
+                    <div class="box">
+
+                        <strong>💡 Real Life Example</strong>
+
+                        <p>
+
+                            Socho tumhare paas ek fully equipped toolbox hai.
+
+                        </p>
+
+                        <p>
+
+                            Har tool alag se banane ki jagah tum seedha toolbox se tool use kar lete ho.
+
+                        </p>
+
+                        <p>
+
+                            STL bhi programmer ko ready-made tools provide karti hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Why Do We Use STL?</h3>
+
+                    <h4>
+
+                        STL ka use coding ko fast, efficient aur easy banane ke liye kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>STL is used to reduce coding effort, improve performance, and simplify program
+                            development.</b>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Reduces code writing.</li>
+
+                        <li>Provides efficient data structures.</li>
+
+                        <li>Offers ready-made algorithms.</li>
+
+                        <li>Improves program performance.</li>
+
+                        <li>Saves development time.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Main Components of STL</h3>
+
+                    <h4>
+
+                        STL mainly teen important components par based hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The Standard Template Library mainly consists of three important components.</b>
+
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Component</th>
+
+                            <th>Description</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Containers</td>
+
+                            <td>Store and organize data.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Iterators</td>
+
+                            <td>Access elements in containers.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Algorithms</td>
+
+                            <td>Perform operations like sorting and searching.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Basic Syntax</h3>
+
+                    <h4>
+
+                        STL use karne ke liye required header files include ki jati hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Required header files must be included before using STL components.</b>
+
+                    </h4>
+
+                    <pre>
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Syntax Explanation</strong>
+
+                        <ul>
+
+                            <li><b>&lt;vector&gt;</b> → Used for dynamic arrays.</li>
+
+                            <li><b>&lt;algorithm&gt;</b> → Provides sorting, searching, and other algorithms.</li>
+
+                            <li>Include only the headers required for your program.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Containers</h3>
+
+                    <h4>
+
+                        Containers STL ka sabse important part hain. Ye data ko store aur manage karne ke liye use hote
+                        hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Containers are objects that store and organize data efficiently in memory.</b>
+
+                    </h4>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Containers ka use large amount of data ko easily store aur access karne ke liye hota hai.
+
+                        </p>
+
+                    </div>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Container</th>
+
+                            <th>Purpose</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Vector</td>
+
+                            <td>Dynamic Array</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>List</td>
+
+                            <td>Doubly Linked List</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Queue</td>
+
+                            <td>FIFO Data Structure</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Stack</td>
+
+                            <td>LIFO Data Structure</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Map</td>
+
+                            <td>Stores Key-Value Pairs</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Set</td>
+
+                            <td>Stores Unique Elements</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Vector</h3>
+
+                    <h4>
+
+                        Vector ek dynamic array hota hai jiska size program ke dauran automatically badh ya ghat sakta
+                        hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A vector is a dynamic array that automatically resizes when elements are added or
+                            removed.</b>
+
+                    </h4>
+
+                    <pre>
+vector&lt;int&gt; numbers;
+
+numbers.push_back(10);
+
+numbers.push_back(20);
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Jab data ka size pehle se pata na ho tab <b>vector</b> sabse best container hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Vector Example</h3>
+
+                    <h4>
+
+                        Ye program vector me values store karke print karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program stores values in a vector and displays them.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#vectorExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="vectorExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+using namespace std;
+
+int main()
+{
+
+    vector&lt;int&gt; num;
+
+    num.push_back(10);
+
+    num.push_back(20);
+
+    num.push_back(30);
+
+    for(int i=0;i&lt;num.size();i++)
+    {
+        cout << num[i] << " ";
+    }
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            10 20 30
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            Three values are inserted into the vector using <b>push_back()</b>.
+
+                            <br>
+
+                            The loop prints all elements one by one.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>List</h3>
+
+                    <h4>
+
+                        List ek Doubly Linked List hoti hai jisme elements easily insert aur delete kiye ja sakte hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A list is a doubly linked list that allows fast insertion and deletion of elements.</b>
+
+                    </h4>
+
+                    <pre>
+list&lt;int&gt; num;
+
+num.push_back(5);
+
+num.push_back(10);
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Frequent insertion aur deletion ke liye <b>list</b> use hoti hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Stack</h3>
+
+                    <h4>
+
+                        Stack ek Linear Data Structure hai jo <b>LIFO (Last In First Out)</b> principle follow karta
+                        hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A stack follows the Last In First Out (LIFO) principle.</b>
+
+                    </h4>
+
+                    <pre>
+stack&lt;int&gt; s;
+
+s.push(10);
+
+s.push(20);
+
+s.pop();
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Function calls, Undo operations aur Expression Evaluation me <b>stack</b> use hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Queue</h3>
+
+                    <h4>
+
+                        Queue ek Linear Data Structure hai jo <b>FIFO (First In First Out)</b> principle follow karta
+                        hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A queue follows the First In First Out (FIFO) principle.</b>
+
+                    </h4>
+
+                    <pre>
+queue&lt;int&gt; q;
+
+q.push(10);
+
+q.push(20);
+
+q.pop();
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Ticket Booking, Printer Queue aur CPU Scheduling me <b>queue</b> use hoti hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Iterators</h3>
+
+                    <h4>
+
+                        Iterator ek object hota hai jo container ke elements ko ek-ek karke access karne ke liye use
+                        hota hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>An iterator is an object used to access and traverse the elements of a container.</b>
+
+                    </h4>
+
+                    <pre>
+vector&lt;int&gt; num = {10,20,30};
+
+vector&lt;int&gt;::iterator it;
+
+for(it = num.begin(); it != num.end(); it++)
+{
+    cout << *it << " ";
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Iterators are useful for traversing containers without using array indexing.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Algorithms</h3>
+
+                    <h4>
+
+                        Algorithms STL ke ready-made functions hote hain jo sorting, searching aur counting jaise
+                        operations perform karte hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Algorithms are built-in STL functions used to perform operations such as sorting, searching,
+                            counting, and reversing data.</b>
+
+                    </h4>
+
+                    <div class="box">
+
+                        <strong>💡 Common Algorithms</strong>
+
+                        <ul>
+
+                            <li>sort()</li>
+
+                            <li>find()</li>
+
+                            <li>reverse()</li>
+
+                            <li>count()</li>
+
+                            <li>max_element()</li>
+
+                            <li>min_element()</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>sort() Function</h3>
+
+                    <h4>
+
+                        <b>sort()</b> function elements ko ascending order me arrange karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>sort()</code> function arranges elements in ascending order.</b>
+
+                    </h4>
+
+                    <pre>
+vector&lt;int&gt; num = {40,10,30,20};
+
+sort(num.begin(), num.end());
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Sorting student marks, salaries aur product prices ke liye <b>sort()</b> use hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>find() Function</h3>
+
+                    <h4>
+
+                        <b>find()</b> function container me kisi element ko search karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>find()</code> function searches for an element inside a container.</b>
+
+                    </h4>
+
+                    <pre>
+auto it = find(num.begin(), num.end(), 30);
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Searching records, IDs aur values ke liye <b>find()</b> use hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>STL Example</h3>
+
+                    <h4>
+
+                        Ye program vector ke elements ko sort karta hai aur display karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program sorts the elements of a vector and displays them.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#stlExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="stlExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+int main()
+{
+
+    vector&lt;int&gt; num = {40,10,30,20};
+
+    sort(num.begin(), num.end());
+
+    for(int i=0; i&lt;num.size(); i++)
+    {
+        cout << num[i] << " ";
+    }
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            10 20 30 40
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The vector stores four elements.
+
+                            <br>
+
+                            The <b>sort()</b> function arranges the elements in ascending order.
+
+                            <br>
+
+                            Finally, the loop prints the sorted elements.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Searching Example</h3>
+
+                    <h4>
+
+                        Ye program <b>find()</b> function ki help se ek element search karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program searches for an element using the <code>find()</code> function.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#findExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="findExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+
+using namespace std;
+
+int main()
+{
+
+    vector&lt;int&gt; num = {10,20,30,40};
+
+    auto it = find(num.begin(), num.end(), 30);
+
+    if(it != num.end())
+        cout << "Element Found";
+    else
+        cout << "Element Not Found";
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Element Found
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The <b>find()</b> function searches for the value <b>30</b>.
+
+                            <br>
+
+                            Since the element exists in the vector, the program displays <b>"Element Found"</b>.
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Advantages of STL</h3>
+
+                    <h4>
+
+                        STL programming ko fast, simple aur efficient banata hai. Isme ready-made classes aur algorithms
+                        available hote hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>STL provides ready-made data structures and algorithms, making programs faster, easier, and
+                            more efficient.</b>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Reduces coding effort.</li>
+
+                        <li>Provides reusable code.</li>
+
+                        <li>Improves program performance.</li>
+
+                        <li>Saves development time.</li>
+
+                        <li>Easy to learn and use.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Common Mistakes</h3>
+
+                    <h4>
+
+                        Beginners STL use karte waqt kuch common mistakes kar dete hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Beginners often make common mistakes while using the Standard Template Library.</b>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Forgetting to include the required header file.</li>
+
+                        <li>Using the wrong container for a task.</li>
+
+                        <li>Accessing elements outside the container size.</li>
+
+                        <li>Not checking whether an element exists before using it.</li>
+
+                        <li>Using algorithms without including <b>&lt;algorithm&gt;</b>.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Important Note</h3>
+
+                    <h4>
+
+                        Har container ka apna purpose hota hai. Hamesha problem ke according sahi container aur
+                        algorithm choose karein.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Choose the appropriate container and algorithm based on the problem to achieve better
+                            performance.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Did You Know?</h3>
+
+                    <h4>
+
+                        Competitive Programming aur Software Development me STL ka bahut use hota hai. Most programmers
+                        arrays ki jagah <b>vector</b> use karna prefer karte hain kyunki uska size automatically manage
+                        ho jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>STL is widely used in competitive programming and real-world software development because it
+                            provides efficient and reusable components.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Summary Table</h3>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Component</th>
+
+                            <th>Purpose</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Vector</td>
+
+                            <td>Dynamic array.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>List</td>
+
+                            <td>Doubly linked list.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Stack</td>
+
+                            <td>Follows LIFO principle.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Queue</td>
+
+                            <td>Follows FIFO principle.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Map</td>
+
+                            <td>Stores key-value pairs.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Set</td>
+
+                            <td>Stores unique elements.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Iterator</td>
+
+                            <td>Traverses container elements.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>sort()</td>
+
+                            <td>Sorts elements.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>find()</td>
+
+                            <td>Searches an element.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Key Points</h3>
+
+                    <ul>
+
+                        <li>STL provides ready-made data structures and algorithms.</li>
+
+                        <li>Containers store and organize data.</li>
+
+                        <li>Iterators are used to traverse containers.</li>
+
+                        <li>Algorithms perform operations like sorting and searching.</li>
+
+                        <li><b>vector</b> is the most commonly used STL container.</li>
+
+                        <li><b>sort()</b> arranges elements in ascending order.</li>
+
+                        <li><b>find()</b> searches for an element in a container.</li>
+
+                        <li>STL improves code quality and development speed.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Practice Questions</h3>
+
+                    <ol>
+
+                        <li>What is STL in C++?</li>
+
+                        <li>Why do we use STL?</li>
+
+                        <li>Name the three main components of STL.</li>
+
+                        <li>What is the difference between a Vector and a List?</li>
+
+                        <li>What is an Iterator?</li>
+
+                        <li>Explain the use of the <b>sort()</b> function.</li>
+
+                        <li>What is the purpose of the <b>find()</b> function?</li>
+
+                        <li>Differentiate between Stack and Queue.</li>
+
+                        <li>Write a C++ program to sort elements using a Vector.</li>
+
+                        <li>Write a C++ program to search an element using <b>find()</b>.</li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <a href="index.html#topics" class="home-btn">
+        <span class="glyphicon glyphicon-home"></span>
+    </a>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

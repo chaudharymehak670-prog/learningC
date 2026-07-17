@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to C++</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="topics.css">
+</head>
+
+<body>
+
+    <div class="section1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h1>FILE HANDLING IN C++</h1>
+                </div>
+
+                <div class="col-lg-8">
+
+                    <h4>
+
+                        File Handling C++ ka ek important concept hai jiska use files me data ko store, read aur update
+                        karne ke liye kiya jata hai. Isse data permanently save rehta hai aur program band hone ke baad
+                        bhi
+                        delete nahi hota. C++ me File Handling ke liye <b>&lt;fstream&gt;</b> header file ka use kiya
+                        jata
+                        hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>File Handling in C++ is used to create, read, write, and update files. It helps store data
+                            permanently so that it is available even after the program is closed.</b>
+
+                    </h4>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <a href="./index.html#topics">
+
+                        <img src="file11.png" class="img-responsive">
+
+                    </a>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>What is File Handling?</h3>
+
+                    <h4>
+
+                        File Handling ek process hai jisme hum files ke andar data ko store aur retrieve karte hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>File Handling is the process of creating, reading, writing, and managing files in a
+                            program.</b>
+
+                    </h4>
+
+                    <div class="box">
+
+                        <strong>💡 Real Life Example</strong>
+
+                        <p>
+
+                            Socho tum ek diary me roz apne notes likhte ho.
+
+                        </p>
+
+                        <p>
+
+                            Diary band karne ke baad bhi tumhare notes safe rehte hain.
+
+                        </p>
+
+                        <p>
+
+                            Isi tarah File Handling data ko permanently save karti hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Why Do We Use File Handling?</h3>
+
+                    <h4>
+
+                        File Handling ka use data ko permanently store karne aur baad me use dobara access karne ke liye
+                        kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>File Handling is used to permanently store data, retrieve it later, and manage information
+                            efficiently.</b>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Store data permanently.</li>
+
+                        <li>Read saved information.</li>
+
+                        <li>Update existing files.</li>
+
+                        <li>Share data between programs.</li>
+
+                        <li>Maintain records efficiently.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Main Concepts of File Handling</h3>
+
+                    <h4>
+
+                        File Handling me mainly ye concepts use hote hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The following concepts are commonly used in File Handling.</b>
+
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Concept</th>
+
+                            <th>Description</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>fstream</td>
+
+                            <td>Header file for file operations.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>ofstream</td>
+
+                            <td>Used to write data into a file.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>ifstream</td>
+
+                            <td>Used to read data from a file.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>fstream</td>
+
+                            <td>Used for both reading and writing.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Basic Syntax</h3>
+
+                    <h4>
+
+                        File Handling shuru karne ke liye sabse pehle <b>&lt;fstream&gt;</b> header file include ki jati
+                        hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>&lt;fstream&gt;</code> header file is required to perform file operations in
+                            C++.</b>
+
+                    </h4>
+
+                    <pre>
+#include &lt;fstream&gt;
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Syntax Explanation</strong>
+
+                        <ul>
+
+                            <li><b>&lt;fstream&gt;</b> provides classes for file operations.</li>
+
+                            <li><b>ofstream</b> writes data into a file.</li>
+
+                            <li><b>ifstream</b> reads data from a file.</li>
+
+                            <li><b>fstream</b> can perform both reading and writing.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>ofstream (Output File Stream)</h3>
+
+                    <h4>
+
+                        <b>ofstream</b> ka use file ke andar data likhne (write) ke liye kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>ofstream</code> class is used to create a file and write data into it.</b>
+
+                    </h4>
+
+                    <pre>
+ofstream file("student.txt");
+
+file << "Hello World";
+
+file.close();
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Student records, reports aur log files save karne ke liye <b>ofstream</b> use hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>ifstream (Input File Stream)</h3>
+
+                    <h4>
+
+                        <b>ifstream</b> ka use file se data read karne ke liye kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>ifstream</code> class is used to read data from a file.</b>
+
+                    </h4>
+
+                    <pre>
+ifstream file("student.txt");
+
+string text;
+
+file >> text;
+
+file.close();
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Already saved information ko read karne ke liye <b>ifstream</b> use kiya jata hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>fstream (File Stream)</h3>
+
+                    <h4>
+
+                        <b>fstream</b> ka use ek hi object se file ko read aur write dono karne ke liye kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>fstream</code> class can perform both reading and writing operations on a file.</b>
+
+                    </h4>
+
+                    <pre>
+fstream file("student.txt");
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Jab ek hi file me read aur write dono operations karne ho tab <b>fstream</b> use hota hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Opening a File</h3>
+
+                    <h4>
+
+                        File par koi bhi operation karne se pehle usse open karna zaroori hota hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A file must be opened before performing read or write operations.</b>
+
+                    </h4>
+
+                    <pre>
+ofstream file;
+
+file.open("student.txt");
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            File ko open() function ki help se manually open kiya ja sakta hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Writing Data into a File</h3>
+
+                    <h4>
+
+                        Ye program ek file create karta hai aur usme data write karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program creates a file and writes data into it.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#writeFileExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="writeFileExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    ofstream file("student.txt");
+
+    file << "Welcome to C++ File Handling";
+
+    file.close();
+
+    cout << "Data Written Successfully";
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Data Written Successfully
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The file <b>student.txt</b> is created.
+
+                            <br>
+
+                            The text <b>"Welcome to C++ File Handling"</b> is written into the file.
+
+                            <br>
+
+                            Finally, the file is closed using <b>close()</b>.
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Appending Data to a File</h3>
+
+                    <h4>
+
+                        Agar existing file ke end me naya data add karna ho to <b>ios::app</b> mode use kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>ios::app</code> mode is used to add new data at the end of an existing file without
+                            deleting its previous content.</b>
+
+                    </h4>
+
+                    <pre>
+ofstream file("student.txt", ios::app);
+
+file << "New Record";
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Attendance, logs aur student records me naya data add karne ke liye <b>ios::app</b> use hota
+                            hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Appending Data Example</h3>
+
+                    <h4>
+
+                        Ye program existing file ke end me naya data add karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program appends new data to an existing file.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#appendExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="appendExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+using namespace std;
+
+int main()
+{
+
+    ofstream file("student.txt", ios::app);
+
+    file << "\nWelcome Again";
+
+    file.close();
+
+    cout << "Data Appended Successfully";
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Data Appended Successfully
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The file is opened in <b>append mode</b>.
+
+                            <br>
+
+                            The new text is added at the end of the existing file.
+
+                            <br>
+
+                            The previous data remains unchanged.
+
+                            <br>
+
+                            Finally, the file is closed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Common Mistakes</h3>
+
+                    <h4>
+
+                        Beginners File Handling use karte waqt kuch common mistakes kar dete hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Beginners often make common mistakes while working with files.</b>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Forgetting to include the <b>&lt;fstream&gt;</b> header file.</li>
+
+                        <li>Not checking whether the file opened successfully.</li>
+
+                        <li>Forgetting to close the file.</li>
+
+                        <li>Using the wrong file mode.</li>
+
+                        <li>Trying to read from a file that does not exist.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Important Note</h3>
+
+                    <h4>
+
+                        File ka kaam complete hone ke baad hamesha <b>close()</b> function call karein. Ye ek achhi
+                        programming practice hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Always close a file after completing file operations to save data properly and free system
+                            resources.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Did You Know?</h3>
+
+                    <h4>
+
+                        Banking systems, hospital management, school software aur online shopping websites sabhi File
+                        Handling ka use data store karne ke liye karti hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>File Handling is widely used in banking systems, hospitals, schools, and business
+                            applications to store and manage data permanently.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Summary Table</h3>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Concept</th>
+
+                            <th>Purpose</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>ofstream</td>
+
+                            <td>Write data into a file.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>ifstream</td>
+
+                            <td>Read data from a file.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>fstream</td>
+
+                            <td>Read and write data.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>open()</td>
+
+                            <td>Open a file.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>close()</td>
+
+                            <td>Close a file.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>getline()</td>
+
+                            <td>Read an entire line.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>ios::in</td>
+
+                            <td>Open for reading.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>ios::out</td>
+
+                            <td>Open for writing.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>ios::app</td>
+
+                            <td>Append data to a file.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>ios::binary</td>
+
+                            <td>Open a file in binary mode.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Key Points</h3>
+
+                    <ul>
+
+                        <li>File Handling stores data permanently.</li>
+
+                        <li><b>&lt;fstream&gt;</b> is required for file operations.</li>
+
+                        <li><b>ofstream</b> writes data into a file.</li>
+
+                        <li><b>ifstream</b> reads data from a file.</li>
+
+                        <li><b>fstream</b> can perform both reading and writing.</li>
+
+                        <li>Always close the file after use.</li>
+
+                        <li>Use <b>getline()</b> to read a complete line.</li>
+
+                        <li>Use <b>ios::app</b> to append data without deleting existing content.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Practice Questions</h3>
+
+                    <ol>
+
+                        <li>What is File Handling in C++?</li>
+
+                        <li>Why do we use File Handling?</li>
+
+                        <li>Differentiate between <b>ofstream</b> and <b>ifstream</b>.</li>
+
+                        <li>What is the purpose of the <b>fstream</b> class?</li>
+
+                        <li>What is the use of the <b>open()</b> function?</li>
+
+                        <li>Why is the <b>close()</b> function important?</li>
+
+                        <li>Explain the use of <b>getline()</b>.</li>
+
+                        <li>What is the purpose of <b>ios::app</b> mode?</li>
+
+                        <li>Write a C++ program to write data into a file.</li>
+
+                        <li>Write a C++ program to read data from a file.</li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a href="index.html#topics" class="home-btn">
+    <span class="glyphicon glyphicon-home"></span>
+</a>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

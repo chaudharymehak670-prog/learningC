@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to C++</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="topics.css">
+
+</head>
+
+<body>
+    <div class="section1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h1>VARIABLES IN C++</h1>
+                </div>
+
+                <div class="col-lg-8">
+                    <h4>
+                        Variables computer ki memory me data store karne ke liye use hote hain. Har variable ka ek
+                        unique
+                        naam, data type aur value hoti hai. Program ke execution ke dauran variable ki value ko change
+                        kiya
+                        ja sakta hai. Variables ki help se hum user input store kar sakte hain, calculations perform kar
+                        sakte hain aur data ko easily manage kar sakte hain.
+                    </h4>
+
+                    <h4>
+                        <b>Variables are used to store data in the computer's memory. Every variable has a unique name,
+                            a
+                            data type, and a value. Variables help store, update, and manage data during program
+                            execution.</b>
+                    </h4>
+                </div>
+
+                <div class="col-lg-4">
+                    <a href="./index.html#topics">
+                        <img src="variable2.png" class="img-responsive">
+                    </a>
+                </div>
+
+                <div class="col-lg-12">
+
+                    <h3>What are Variables?</h3>
+
+                    <h4>
+                        Variable ek named memory location hota hai jisme data store kiya jata hai. Jab bhi program ko
+                        kisi
+                        value ko future me use karna hota hai, us value ko variable me store kiya jata hai.
+                    </h4>
+
+                    <h4>
+                        <b>A variable is a named memory location used to store data. It allows programmers to store and
+                            use
+                            values whenever required in a program.</b>
+                    </h4>
+
+                </div>
+
+                <div class="col-lg-12">
+
+                    <h3>Why Do We Use Variables?</h3>
+
+                    <h4>
+                        Variables ka use data ko store karne, update karne aur program ke different parts me reuse karne
+                        ke
+                        liye kiya jata hai. Ye program ko flexible aur easy banate hain.
+                    </h4>
+
+                    <h4>
+                        <b>Variables are used to store, modify, and reuse data. They make programs flexible, readable,
+                            and
+                            easy to manage.</b>
+                    </h4>
+
+                    <ul>
+
+                        <li>Store data in memory.</li>
+
+                        <li>Reuse values multiple times.</li>
+
+                        <li>Perform calculations.</li>
+
+                        <li>Take user input.</li>
+
+                        <li>Improve program readability.</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-12">
+
+                    <h3>Rules for Naming Variables</h3>
+
+                    <h4>
+                        Variable name rakhte waqt kuch important rules follow karne padte hain.
+                    </h4>
+
+                    <h4>
+                        <b>Variable names must follow certain rules in C++.</b>
+                    </h4>
+
+                    <ul>
+
+                        <li>Variable name must start with a letter or underscore (_).</li>
+
+                        <li>It cannot start with a number.</li>
+
+                        <li>Spaces are not allowed.</li>
+
+                        <li>Special characters are not allowed except underscore (_).</li>
+
+                        <li>C++ keywords cannot be used as variable names.</li>
+
+                        <li>Variable names are case-sensitive.</li>
+
+                    </ul>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Variable Declaration</h3>
+
+                    <h4>
+                        Variable Declaration ka matlab variable ka naam aur uska data type batana hota hai. Declaration
+                        ke
+                        time variable ko value dena zaroori nahi hota.
+                    </h4>
+
+                    <h4>
+                        <b>Variable declaration means specifying the data type and name of a variable. A value is not
+                            required during declaration.</b>
+                    </h4>
+
+                    <pre>
+dataType variableName;
+</pre>
+
+                </div>
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Variable Initialization</h3>
+
+                    <h4>
+                        Variable Initialization ka matlab variable ko value assign karna hota hai.
+                    </h4>
+
+                    <h4>
+                        <b>Variable initialization means assigning a value to a variable.</b>
+                    </h4>
+
+                    <pre>
+int age;
+
+age = 20;
+</pre>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Declaration and Initialization</h3>
+
+                    <h4>
+                        Variable ko declare aur initialize ek hi statement me bhi kiya ja sakta hai.
+                    </h4>
+
+                    <h4>
+                        <b>A variable can be declared and initialized in the same statement.</b>
+                    </h4>
+
+                    <pre>
+int age = 20;
+</pre>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Multiple Variable Declaration</h3>
+
+                    <h4>
+                        Ek hi data type ke multiple variables ko ek hi statement me declare kiya ja sakta hai.
+                    </h4>
+
+                    <h4>
+                        <b>Multiple variables of the same data type can be declared in a single statement.</b>
+                    </h4>
+
+                    <pre>
+int a, b, c;
+</pre>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Constant Variables</h3>
+
+                    <h4>
+                        Agar kisi variable ki value ko change nahi karna ho to <b>const</b> keyword ka use kiya jata
+                        hai.
+                    </h4>
+
+                    <h4>
+                        <b>The <code>const</code> keyword is used to create variables whose values cannot be
+                            changed.</b>
+                    </h4>
+
+                    <pre>
+const float PI = 3.14;
+</pre>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Variable Syntax</h3>
+
+                    <pre>
+dataType variableName;
+
+dataType variableName = value;
+</pre>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#variableExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Examples
+
+                    </a>
+
+                    <div id="variableExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int main(){
+
+int age = 21;
+
+string name = "Anjali";
+
+cout &lt;&lt; age;
+
+cout &lt;&lt; name;
+
+return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br>
+
+                            21
+
+                            <br>
+
+                            Anjali
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Summary Table</h3>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+                            <th>Concept</th>
+                            <th>Description</th>
+                        </tr>
+
+                        <tr>
+                            <td>Variable</td>
+                            <td>Stores data in memory</td>
+                        </tr>
+
+                        <tr>
+                            <td>Declaration</td>
+                            <td>Creating a variable</td>
+                        </tr>
+
+                        <tr>
+                            <td>Initialization</td>
+                            <td>Assigning a value</td>
+                        </tr>
+
+                        <tr>
+                            <td>Multiple Variables</td>
+                            <td>Declare many variables together</td>
+                        </tr>
+
+                        <tr>
+                            <td>Constant</td>
+                            <td>Value cannot be changed</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Key Points</h3>
+
+                    <ul>
+
+                        <li>Variables are used to store data in memory.</li>
+
+                        <li>Every variable has a data type, name, and value.</li>
+
+                        <li>A variable must be declared before it is used.</li>
+
+                        <li>Initialization means assigning a value to a variable.</li>
+
+                        <li>Multiple variables can be declared in one statement.</li>
+
+                        <li>The <b>const</b> keyword is used for constant variables.</li>
+
+                        <li>Variable names are case-sensitive.</li>
+
+                        <li>C++ keywords cannot be used as variable names.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Practice Questions</h3>
+
+                    <ol>
+
+                        <li>What is a variable?</li>
+
+                        <li>Why do we use variables in C++?</li>
+
+                        <li>Write the rules for naming variables.</li>
+
+                        <li>What is variable declaration?</li>
+
+                        <li>What is variable initialization?</li>
+
+                        <li>Write the syntax for declaring a variable.</li>
+
+                        <li>What is the difference between declaration and initialization?</li>
+
+                        <li>How do you declare multiple variables?</li>
+
+                        <li>What is a constant variable?</li>
+
+                        <li>Write a C++ program to declare and initialize variables.</li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <a href="index.html#topics" class="home-btn">
+        <span class="glyphicon glyphicon-home"></span>
+    </a>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

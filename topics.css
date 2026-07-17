@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ===================================
+   Global
+=================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F8FAFC;
+    color: #64748B;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.section1 {
+    padding: 60px 0;
+}
+
+/* ===================================
+   Headings
+=================================== */
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #2451B3;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+h3 {
+    color: black;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    border-left: 5px solid #2451B3;
+    padding-left: 15px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    /* color:#555; */
+    color: #64748B;
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+
+/* ===================================
+   Image
+=================================== */
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* ===================================
+   Code
+=================================== */
+
+pre {
+    background: #0F172A;
+    color: #E2E8F0;
+    padding: 20px;
+    border-left: 5px solid #2451B3;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+/* ===================================
+   Tables
+=================================== */
+
+.table {
+    margin-top: 20px;
+}
+
+.table th {
+    background: #2451B3 !important;
+    color: #fff !important;
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+/* ===================================
+   Info Box
+=================================== */
+
+.box {
+    background: #EEF5FF;
+    border-left: 5px solid #2451B3;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.box strong {
+    color: #2451B3;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.box p {
+    margin: 0;
+}
+
+/* ===================================
+   Output
+=================================== */
+
+.output {
+    background: #EEF5FF;
+    border-left: 5px solid #2451B3;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.output b {
+    color: #2451B3;
+}
+
+/* ===================================
+   Example Button
+=================================== */
+
+.example-btn {
+    background: #2451B3;
+    color: #fff !important;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+    display: inline-block;
+    margin: 15px 0;
+    transition: .3s;
+}
+
+.example-btn:hover,
+.example-btn:focus {
+    background: #183B8F;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* ===================================
+   Lists
+=================================== */
+
+ul,
+ol {
+    margin-top: 15px;
+    padding-left: 22px;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+    /* color:#555; */
+    color: #64748B;
+}
+
+/* ===================================
+   Links
+=================================== */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* ===================================
+   Bold
+=================================== */
+
+b,
+strong {
+    color: #0F172A;
+}
+
+/* ===================================
+   Responsive
+=================================== */
+
+@media(max-width:991px) {
+
+    .section1 {
+        padding: 40px 0;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    img {
+        margin-top: 25px;
+    }
+
+    pre {
+        font-size: 15px;
+    }
+
+}
+
+.home-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 55px;
+    height: 55px;
+    background: #f7690a;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+    z-index: 9999;
+    transition: all .3s ease;
+}
+
+.home-btn:hover {
+    background: #e65c00;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-5px) scale(1.08);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .35);
+}
+
+.home-btn:focus {
+    color: #fff;
+    text-decoration: none;
+}

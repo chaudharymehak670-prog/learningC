@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body> 
+
+    <header>
+        <nav class="navbar  navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <div class="navbar-header"> 
+
+                    <a class="navbar-brand" href="#">
+                        <img src="institutelogo.png" alt="The Coding Expert" class="logo-img">
+                    </a>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                Learn <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="introduction.html">Introduction</a></li>
+                                <li><a href="variable.html">Variables</a></li>
+                                <li><a href="datatype.html">Data Types</a></li>
+                                <li><a href="operator.html">Operators</a></li>
+                                <li><a href="loop.html">Loops</a></li>
+                                <li><a href="ifstatement.html">Conditional Statement</a></li>
+                                <li><a href="function.html">Functions</a></li>
+                                <li><a href="pointer.html">Pointers</a></li>
+                                <li><a href="oops.html">OOP</a></li>
+                                <li><a href="file.html">File Handling</a></li>
+                                <li><a href="stl.html">STL</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#contact">Contact Us</a>
+                        </li>
+
+
+                        <li> <a href="#faq" id="">
+                                FAQ
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Search -->
+                    <form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control search-box" placeholder="Search topics ">
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="hero-copy">
+                            <span class="eyebrow"> 100% free · no signup required</span>
+                            <h1>Learn <span class="highlight">C++</span><br>from your first line<br>to your first
+                                project
+                            </h1>
+                            <p class="hero-text">
+                                A structured, beginner-friendly course covering everything from variables
+                                to the Standard Template Library — with runnable examples and a clear
+                                roadmap, so you always know what to learn next.
+                            </p>
+
+
+                            <div class="hero-buttons">
+                                <a href="#topic" class="btn btn-primary">Start Learning →</a>
+                                <a href="#topic" class="btn btn-ghost">View Roadmap</a>
+                            </div>
+
+                            <div class="hero-trust">
+                                <div class="hero-trust-item"><strong>12</strong><span>Topics</span></div>
+                                <div class="hero-trust-item"><strong>50+</strong><span>Examples</span></div>
+                                <div class="hero-trust-item"><strong>30+</strong><span>Quizzes</span></div>
+                                <div class="hero-trust-item"><strong>Free</strong><span>Always</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="box ">
+                            <div class="image"> <img src="editor.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </header>
+    <div class="section1" id="topic">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <span class="eyebrow">the roadmap</span>
+                    <h1>Every topic, in the order you'll actually need it</h1>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p class="net">Each lesson builds on the last — start at Introduction and work your way down to STL
+                        like a real
+                        course, not
+                        a random reference dump.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3  col-md-6 col-sm-6 col-xs-12    topicbox">
+                    <a class="topic-card" href="introduction.html" style="text-decoration:none">
+                        <div class="topic-top">
+                            <span class="topic-index">01 / include</span>
+                            <span class="topic-icon">{ }</span>
+                        </div>
+                        <h3>Introduction</h3>
+                        <p class="topic-desc">History of C++, program structure, compilation process, first program,
+                            syntax
+                            and core
+                            concepts for beginners.</p>
+                        <div class="topic-foot">
+                            <span class="topic-tag">start here</span>
+                            <span class="topic-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3   col-md-6 col-sm-6 col-xs-12  topicbox">
+                    <a class="topic-card" href="variable.html" style="text-decoration:none">
+                        <div class="topic-top">
+                            <span class="topic-index">02 / declare</span>
+                            <span class="topic-icon">x</span>
+                        </div>
+                        <h3>Variables</h3>
+                        <p class="topic-desc">Declaration, initialization, naming rules, scope, lifetime, constants and
+                            format
+                            specifiers with examples.</p>
+                        <div class="topic-foot">
+                            <span class="topic-tag">beginner</span>
+                            <span class="topic-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3   col-md-6 col-sm-6 col-xs-12   topicbox">
+                    <a class="topic-card" href="datatype.html" style="text-decoration:none">
+                        <div class="topic-top">
+                            <span class="topic-index">03 / type</span>
+                            <span class="topic-icon">01</span>
+                        </div>
+                        <h3>Data Types</h3>
+                        <p class="topic-desc">Primitive and derived types — int, float, double, char, bool — modifiers,
+                            memory size
+                            and type conversion.</p>
+                        <div class="topic-foot">
+                            <span class="topic-tag">beginner</span>
+                            <span class="topic-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3   col-md-6 col-sm-6 col-xs-12   topicbox">
+                    <a class="topic-card" href="operator.html" style="text-decoration:none">
+                        <div class="topic-top">
+                            <span class="topic-index">04 / compute</span>
+                            <span class="topic-icon">+/−</span>
+                        </div>
+                        <h3>Operators</h3>
+                        <p class="topic-desc">Arithmetic, relational, logical, assignment, increment/decrement, bitwise,
+                            ternary and
+                            sizeof operators.</p>
+                        <div class="topic-foot">
+                            <span class="topic-tag">beginner</span>
+                            <span class="topic-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12     topicbox">
+                    <a class="topic-card" href="loop.html" style="text-decoration:none">
+                        <div class="topic-top">
+                            <span class="topic-index">05 / repeat</span>
+                            <span class="topic-icon">↻</span>
+                        </div>
+                        <h3>Loops</h3>
+                        <p class="topic-desc">For, while, do-while, nested loops, loop control statements and classic
+                            pattern-printing
+                            programs.</p>
+                        <div class="topic-foot">
+                            <span class="topic-tag">core</span>
+                            <span class="topic-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3  col-md-6 col-sm-6 col-xs-12    topicbox">
+                    <a class="topic-card" href="ifstatement.html" style="text-decoration:none">
+                        <div class="topic-top">
+                            <span class="topic-index">06 / branch</span>
+                            <span class="topic-icon">?:</span>
+                        </div>
+                        <h3>Conditional Statements</h3>
+                        <p class="topic-desc">Decision-making with if, if-else, else-if, nested if, switch statements
+                            and
+                            conditional
+                            operators.</p>
+                        <div class="topic-foot">
+                            <span class="topic-tag">core</span>
+                            <span class="topic-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3  col-md-6 col-sm-6 col-xs-12    topicbox">
+                    <a class="topic-card" href="array.html" style="text-decoration:none">
+                        <div class="topic-top">
+                            <span class="topic-index">07 / store</span>
+                            <span class="topic-icon">[ ]</span>
+                        </div>
+                        <h3>Arrays</h3>
+                        <p class="topic-desc">One and two-dimensional arrays, initialization, traversal, searching,
+                            sorting
+                            and array
+                            operations.</p>
+                        <div class="topic-foot">
+                            <span class="topic-tag">core</span>
+                            <span class="topic-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3  col-md-6 col-sm-6 col-xs-12    topicbox">
+                    <a class="topic-card" href="function.html" style="text-decoration:none">
+                        <div class="topic-top">
+                            <span class="topic-index">08 / reuse</span>
+                            <span class="topic-icon">f()</span>
+                        </div>
+                        <h3>Functions</h3>
+                        <p class="topic-desc">Declaration, definition, parameters, return values, recursion, overloading
+                            and
+                            call by
+                            reference.</p>
+                        <div class="topic-foot">
+                            <span class="topic-tag">core</span>
+                            <span class="topic-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-lg-3  col-md-6 col-sm-6 col-xs-12    topicbox">
+                    <a class="topic-card" href="pointer.html" style="text-decoration:none">
+                        <div class="topic-top">
+                            <span class="topic-index">09 / address</span>
+                            <span class="topic-icon">&amp;p</span>
+                        </div>
+                        <h3>Pointers</h3>
+                        <p class="topic-desc">Address operator, dereferencing, pointer arithmetic, arrays, dynamic
+                            memory
+                            and function
+                            pointers.</p>
+                        <div class="topic-foot">
+                            <span class="topic-tag locked">advanced</span>
+                            <span class="topic-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12     topicbox">
+                    <a class="topic-card" href="oops.html" style="text-decoration:none">
+                        <div class="topic-top">
+                            <span class="topic-index">10 / class</span>
+                            <span class="topic-icon">◇</span>
+                        </div>
+                        <h3>OOP</h3>
+                        <p class="topic-desc">Classes, objects, constructors, destructors, inheritance, polymorphism,
+                            encapsulation
+                            and abstraction.</p>
+                        <div class="topic-foot">
+                            <span class="topic-tag locked">advanced</span>
+                            <span class="topic-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3  col-md-6 col-sm-6 col-xs-12    topicbox">
+                    <a class="topic-card" href="file.html" style="text-decoration:none">
+                        <div class="topic-top">
+                            <span class="topic-index">11 / persist</span>
+                            <span class="topic-icon">▤</span>
+                        </div>
+                        <h3>File Handling</h3>
+                        <p class="topic-desc">Reading, writing and appending text and binary files using ifstream,
+                            ofstream
+                            and
+                            fstream.</p>
+                        <div class="topic-foot">
+                            <span class="topic-tag locked">advanced</span>
+                            <span class="topic-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12     topicbox">
+                    <a class="topic-card" href="stl.html" style="text-decoration:none">
+                        <div class="topic-top">
+                            <span class="topic-index">12 / library</span>
+                            <span class="topic-icon">&lt;&gt;</span>
+                        </div>
+                        <h3>STL</h3>
+                        <p class="topic-desc">Vectors, lists, stacks, queues, maps, sets, iterators and the algorithms
+                            that
+                            tie them
+                            together.</p>
+                        <div class="topic-foot">
+                            <span class="topic-tag locked">final topic</span>
+                            <span class="topic-arrow">→</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="faq-section " id="faq">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <span class="eyebrow">FAQ</span>
+                    <h2 class="faq-title">Frequently Asked Questions</h2>
+                    <p class="faq-subtitle">
+                        Find answers to the most common questions about learning C++.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-10  col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+
+                    <div class="panel-group" id="faqAccordion">
+
+                        <!-- 1 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq1">
+                                        What is C++?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    C++ is a powerful, object-oriented programming language used for software
+                                    development, games, operating systems, and competitive programming.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq2">
+                                        Why should I learn C++?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    C++ improves problem-solving skills and is widely used in system programming, game
+                                    development, embedded systems, and coding interviews.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq3">
+                                        Is C++ difficult for beginners?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq3" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Not at all. With regular practice and a structured roadmap, beginners can learn C++
+                                    step by step.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq4">
+                                        What is the difference between C and C++?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    C is a procedural programming language, whereas C++ supports both procedural and
+                                    object-oriented programming.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq5">
+                                        What are Variables?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq5" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Variables are named memory locations used to store data during program execution.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq6">
+                                        What are Data Types?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq6" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Data types define what type of value a variable can store, such as int, float, char,
+                                    bool, and double.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq7">
+                                        What are Loops?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq7" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Loops execute a block of code repeatedly until a condition becomes false.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 8 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq8">
+                                        What is a Function?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq8" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    A function is a reusable block of code that performs a specific task.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 9 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq9">
+                                        What are Pointers?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq9" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Pointers are variables that store the memory address of another variable.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 10 -->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#faqAccordion" href="#faq10">
+                                        What is STL?
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="faq10" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    STL (Standard Template Library) provides ready-to-use containers, algorithms, and
+                                    iterators that make C++ programming easier.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Logo -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="footer-brand">
+
+                        <a href="#" class="brand">
+                            <span class="brand-badge">C++</span>
+                            <span class="brand-text">CppMaster</span>
+                        </a>
+
+                        <p>
+                            A free, structured C++ course built for people who'd rather
+                            learn by writing code than by reading theory.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Learn -->
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                    <div class="footer-col">
+                        <h4>Learn</h4>
+
+                        <ul>
+                            <li><a href="introduction.html">Introduction</a></li>
+                            <li><a href="loop.html">Loops</a></li>
+                            <li><a href="function.html">Functions</a></li>
+                            <li><a href="oops.html">OOP</a></li>
+                            <li><a href="stl.html">STL</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- More -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="footer-col">
+
+                        <h4>More</h4>
+
+                        <ul>
+                            <li><a href="#">Roadmap</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Contact -->
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+                    <div class="footer-col">
+
+                        <h4>Contact</h4>
+
+                        <ul>
+                            <li><a href="#">hello@cppmaster.dev</a></li>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Discord</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <p class="copyright">
+                        © 2026 CppMaster — Free Forever.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
+                    <p class="copyright">
+                        Built with &lt;/&gt; and Coffee
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

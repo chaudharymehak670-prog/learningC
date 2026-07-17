@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Introduction to C++</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="topics.css">
+
+</head>
+
+<body>
+
+    <div class="section1">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h1>FUNCTIONS IN C++</h1>
+                </div>
+
+                <div class="col-lg-8">
+
+                    <h4>
+
+                        Function C++ me ek reusable block of code hota hai jo kisi specific task ko perform karta hai.
+                        Ek
+                        baar function bana lene ke baad use program me jitni baar chahe call kiya ja sakta hai. Isse
+                        code
+                        repeat nahi hota aur program zyada organized aur easy to maintain ban jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A function is a reusable block of code that performs a specific task. Once a function is
+                            created, it can be called multiple times, making programs shorter, organized, and easier to
+                            maintain.</b>
+
+                    </h4>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <a href="./index.html#topics">
+
+                        <img src="function8.png" class="img-responsive">
+
+                    </a>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>What are Functions?</h3>
+
+                    <h4>
+
+                        Function ek block of code hota hai jo ek particular task perform karta hai. Jab bhi us task ki
+                        zarurat hoti hai, function ko call kar diya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A function is a block of code designed to perform a specific task. It runs only when it is
+                            called.</b>
+
+                    </h4>
+
+                    <div class="box">
+
+                        <strong>💡 Real Life Example</strong>
+
+                        <p>
+
+                            Socho tumhare ghar me washing machine hai.
+
+                        </p>
+
+                        <p>
+
+                            Jab bhi kapde dhone hote hain, tum sirf machine ka <b>Start</b> button dabate ho.
+
+                        </p>
+
+                        <p>
+
+                            Har baar machine ko andar se dobara banana nahi padta.
+
+                        </p>
+
+                        <p>
+
+                            Bilkul isi tarah Function ek baar banta hai aur baar-baar use kiya ja sakta hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Why Do We Use Functions?</h3>
+
+                    <h4>
+
+                        Functions ka use code ko chhota, reusable aur easy banane ke liye kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Functions are used to reduce code repetition, improve readability, and make programs easier
+                            to
+                            manage.</b>
+
+                    </h4>
+
+                    <ul>
+
+                        <li>Avoid writing the same code repeatedly.</li>
+
+                        <li>Make programs modular.</li>
+
+                        <li>Improve code readability.</li>
+
+                        <li>Simplify debugging.</li>
+
+                        <li>Save development time.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Parts of a Function</h3>
+
+                    <h4>
+
+                        Ek Function mainly chaar parts se milkar banta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A function mainly consists of four parts.</b>
+
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Part</th>
+
+                            <th>Description</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Function Declaration</td>
+
+                            <td>Declares the function.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Function Definition</td>
+
+                            <td>Contains the function body.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Function Call</td>
+
+                            <td>Executes the function.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Return Statement</td>
+
+                            <td>Returns a value to the caller.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Function Syntax</h3>
+
+                    <h4>
+
+                        Har Function ka ek fixed syntax hota hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Every function follows a fixed syntax in C++.</b>
+
+                    </h4>
+
+                    <pre>
+returnType functionName()
+{
+    // code
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Syntax Explanation</strong>
+
+                        <ul>
+
+                            <li><b>returnType</b> → Function kis type ki value return karega.</li>
+
+                            <li><b>functionName()</b> → Function ka naam.</li>
+
+                            <li><b>{ }</b> → Function body jahan code likha jata hai.</li>
+
+                            <li><b>return</b> → Function se value wapas bhejne ke liye.</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Function Declaration</h3>
+
+                    <h4>
+
+                        Function Declaration compiler ko function ke naam, return type aur parameters ke baare me batata
+                        hai. Isme sirf function ka prototype likha jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A function declaration tells the compiler about the function's name, return type, and
+                            parameters. It is also called a function prototype.</b>
+
+                    </h4>
+
+                    <pre>
+void greet();
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Function Declaration tab useful hota hai jab function ki definition baad me likhi jati hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Function Definition</h3>
+
+                    <h4>
+
+                        Function Definition ke andar actual code likha jata hai jo function call hone par execute hota
+                        hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A function definition contains the actual code that is executed when the function is
+                            called.</b>
+
+                    </h4>
+
+                    <pre>
+void greet()
+{
+    cout << "Welcome";
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Function Definition me wahi logic likha jata hai jo baar-baar use karna ho.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Function Call</h3>
+
+                    <h4>
+
+                        Function ko execute karne ke liye uska naam likhkar call kiya jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A function call executes the function whenever it is needed in the program.</b>
+
+                    </h4>
+
+                    <pre>
+greet();
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Ek hi function ko program me multiple places par call kiya ja sakta hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Return Statement</h3>
+
+                    <h4>
+
+                        <b>return</b> statement function se value ko wapas caller ke paas bhejta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The <code>return</code> statement sends a value back to the calling function.</b>
+
+                    </h4>
+
+                    <pre>
+int square()
+{
+    return 25;
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Jab function koi result calculate karke wapas dena ho tab <b>return</b> use kiya jata hai.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Function Example</h3>
+
+                    <h4>
+
+                        Neeche diya gaya program ek simple function create aur call karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>The following program creates and calls a simple function.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#functionExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="functionExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+void greet()
+{
+    cout << "Welcome to C++";
+}
+
+int main()
+{
+    greet();
+
+    return 0;
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Welcome to C++
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The function <b>greet()</b> is created.
+
+                            <br>
+
+                            Inside <b>main()</b>, the function is called.
+
+                            <br>
+
+                            When the function executes, it prints <b>"Welcome to C++"</b>.
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Types of Functions</h3>
+
+                    <h4>
+
+                        C++ me Functions ko Parameters aur Return Value ke basis par mainly chaar types me divide kiya
+                        jata hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Functions in C++ are mainly classified into four types based on parameters and return
+                            values.</b>
+
+                    </h4>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Type</th>
+
+                            <th>Description</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>No Parameters, No Return Value</td>
+
+                            <td>Does not take input and does not return anything.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Parameters, No Return Value</td>
+
+                            <td>Takes input but does not return a value.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>No Parameters, Return Value</td>
+
+                            <td>Returns a value without taking input.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Parameters, Return Value</td>
+
+                            <td>Takes input and returns a value.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Function Without Parameters</h3>
+
+                    <h4>
+
+                        Is type ke function me koi input pass nahi kiya jata.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A function without parameters does not receive any input from the user.</b>
+
+                    </h4>
+
+                    <pre>
+void message()
+{
+    cout << "Hello";
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Jab har baar same task perform karna ho, tab parameter ki zarurat nahi hoti.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Function With Parameters</h3>
+
+                    <h4>
+
+                        Is type ke function me values arguments ke through pass ki jati hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A function with parameters receives input values from the calling function.</b>
+
+                    </h4>
+
+                    <pre>
+void add(int a, int b)
+{
+    cout << a + b;
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Different values ke saath same function ko baar-baar use karne ke liye parameters use kiye
+                            jaate hain.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Function With Parameters Example</h3>
+
+                    <h4>
+
+                        Ye program do numbers ka sum print karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program adds two numbers using a function with parameters.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#parameterExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="parameterExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+void add(int a, int b)
+{
+    cout << "Sum = " << a + b;
+}
+
+int main()
+{
+
+    add(10,20);
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            Sum = 30
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The values 10 and 20 are passed to the function.
+
+                            <br>
+
+                            The function adds both numbers.
+
+                            <br>
+
+                            Finally, the result is displayed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Function With Return Value</h3>
+
+                    <h4>
+
+                        Ye function calculation karke result ko <b>return</b> karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A function with a return value performs a task and sends the result back to the calling
+                            function.</b>
+
+                    </h4>
+
+                    <pre>
+int square(int num)
+{
+    return num * num;
+}
+</pre>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Function With Return Value Example</h3>
+
+                    <h4>
+
+                        Ye program kisi number ka square return karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program returns the square of a number.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#returnExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="returnExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int square(int num)
+{
+    return num * num;
+}
+
+int main()
+{
+
+    cout << square(6);
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            36
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The value 6 is passed to the function.
+
+                            <br>
+
+                            The function calculates 6 × 6.
+
+                            <br>
+
+                            The result is returned and displayed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+
+                    <h3>Inline Function</h3>
+
+                    <h4>
+
+                        <b>inline</b> function ek chhota function hota hai jise compiler function call ki jagah directly
+                        insert kar deta hai. Isse execution thoda fast ho sakta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>An inline function is expanded by the compiler at the place where it is called, reducing the
+                            overhead of function calls.</b>
+
+                    </h4>
+
+                    <pre>
+inline int square(int n)
+{
+    return n * n;
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Inline functions are best for small functions that are called frequently.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Recursive Function</h3>
+
+                    <h4>
+
+                        Jab koi function khud ko hi call karta hai, use <b>Recursive Function</b> kehte hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>A recursive function is a function that calls itself until a stopping condition is
+                            reached.</b>
+
+                    </h4>
+
+                    <pre>
+int factorial(int n)
+{
+    if(n==1)
+        return 1;
+
+    return n * factorial(n-1);
+}
+</pre>
+
+                    <div class="box">
+
+                        <strong>💡 Best Use</strong>
+
+                        <p>
+
+                            Recursion is useful for solving problems like factorial, Fibonacci series, tree traversal,
+                            and divide-and-conquer algorithms.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Recursive Function Example</h3>
+
+                    <h4>
+
+                        Ye program recursion ka use karke factorial calculate karta hai.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>This program calculates the factorial of a number using recursion.</b>
+
+                    </h4>
+
+                    <a class="btn btn-warning example-btn" data-toggle="collapse" href="#recursiveExample">
+
+                        <span class="glyphicon glyphicon-eye-open"></span>
+
+                        View Example
+
+                    </a>
+
+                    <div id="recursiveExample" class="collapse">
+
+                        <pre>
+#include &lt;iostream&gt;
+
+using namespace std;
+
+int factorial(int n)
+{
+    if(n==1)
+        return 1;
+
+    return n * factorial(n-1);
+}
+
+int main()
+{
+
+    cout << factorial(5);
+
+    return 0;
+
+}
+</pre>
+
+                        <div class="output">
+
+                            <b>Output</b>
+
+                            <br><br>
+
+                            120
+
+                            <br><br>
+
+                            <b>Explanation</b>
+
+                            <br>
+
+                            The function calls itself repeatedly.
+
+                            <br>
+
+                            5 × 4 × 3 × 2 × 1 = 120
+
+                            <br>
+
+                            Finally, the result is returned and displayed.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Common Mistakes</h3>
+
+                    <ul>
+
+                        <li>Forgetting to call the function after defining it.</li>
+
+                        <li>Using the wrong return type.</li>
+
+                        <li>Not returning a value from a non-void function.</li>
+
+                        <li>Passing the wrong number or type of arguments.</li>
+
+                        <li>Writing recursive functions without a base condition.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Important Note</h3>
+
+                    <h4>
+
+                        Har function ka ek clear purpose hona chahiye. Chhote aur reusable functions program ko readable
+                        aur maintainable banate hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Each function should perform one specific task. Small and reusable functions improve code
+                            quality and readability.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Did You Know?</h3>
+
+                    <h4>
+
+                        Modern software applications me hundreds ya thousands of functions hote hain. Functions hi bade
+                        programs ko manageable banate hain.
+
+                    </h4>
+
+                    <h4>
+
+                        <b>Large software projects are built using hundreds of reusable functions, making development
+                            easier and more organized.</b>
+
+                    </h4>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Summary Table</h3>
+
+                    <table class="table table-bordered">
+
+                        <tr>
+
+                            <th>Concept</th>
+
+                            <th>Purpose</th>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Function Declaration</td>
+
+                            <td>Declares a function before use.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Function Definition</td>
+
+                            <td>Contains the actual code.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Function Call</td>
+
+                            <td>Executes the function.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Parameters</td>
+
+                            <td>Pass values to a function.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Return Value</td>
+
+                            <td>Returns a result to the caller.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Inline Function</td>
+
+                            <td>Improves performance for small functions.</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Recursive Function</td>
+
+                            <td>Calls itself to solve a problem.</td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Key Points</h3>
+
+                    <ul>
+
+                        <li>Functions help avoid code repetition.</li>
+
+                        <li>A function performs one specific task.</li>
+
+                        <li>Functions improve code readability and reusability.</li>
+
+                        <li>Parameters allow passing values to functions.</li>
+
+                        <li>Return statements send values back to the caller.</li>
+
+                        <li>Inline functions are suitable for small tasks.</li>
+
+                        <li>Recursive functions call themselves.</li>
+
+                        <li>Every recursive function must have a base condition.</li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="col-lg-12">
+
+                    <h3>Practice Questions</h3>
+
+                    <ol>
+
+                        <li>What is a function in C++?</li>
+
+                        <li>Why do we use functions?</li>
+
+                        <li>Explain function declaration, definition, and function call.</li>
+
+                        <li>What is the difference between a function with parameters and without parameters?</li>
+
+                        <li>What is a return statement?</li>
+
+                        <li>What is an inline function?</li>
+
+                        <li>What is recursion?</li>
+
+                        <li>Why is the base condition important in recursion?</li>
+
+                        <li>Write a program to find the square of a number using a function.</li>
+
+                        <li>Write a program to calculate the factorial of a number using recursion.</li>
+
+                    </ol>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <a href="index.html#topics" class="home-btn">
+        <span class="glyphicon glyphicon-home"></span>
+    </a>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
